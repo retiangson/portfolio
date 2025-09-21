@@ -1,8 +1,11 @@
 import { useState } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaBars } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaBars, FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function App() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false); // for mobile menu
+  const [openMaster, setOpenMaster] = useState(false); // for Master's degree collapse
+  const [openBachelor, setOpenBachelor] = useState(false); // for Bachelor's degree collapse
+  const [openJob, setOpenJob] = useState(null); // for Experience collapse
 
   return (
     <div className="font-sans bg-gray-50 min-h-screen">
@@ -223,33 +226,97 @@ export default function App() {
         <h3 className="text-3xl font-bold mb-10 text-gray-800">Education</h3>
 
         <div className="relative border-l-4 border-indigo-500 pl-6 space-y-12">
-          
+
           {/* Master's Degree */}
           <div>
-            <h4 className="text-xl font-semibold text-gray-800">
-              Master of Software Engineering (Level 9)
-            </h4>
-            <span className="block text-gray-600 text-sm mb-3">2024 – 2026 (Ongoing) | Yoobee College, New Zealand</span>
-            <p className="text-gray-700">
-              Focused on advanced software engineering principles, cloud computing, 
-              microservices, and applied research. Enhancing expertise in <strong>AI, 
-              DevOps, and scalable systems design</strong>.
-            </p>
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => setOpenMaster(!openMaster)}
+            >
+              <h4 className="text-xl font-semibold text-gray-800">
+                Master of Software Engineering (Level 9)
+              </h4>
+              {openMaster ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
+            <span className="block text-gray-600 text-sm mb-3">
+              2024 – 2026 (Ongoing) | Yoobee College, New Zealand
+            </span>
+
+            {openMaster && (
+              <div className="text-gray-700 space-y-4">
+                <p>
+                  The program is designed to advance technical expertise in modern
+                  software engineering, research, and applied emerging technologies.
+                </p>
+                <ul className="list-disc ml-6 space-y-2">
+                  <li>
+                    <strong>Professional Software Engineering:</strong> 
+                    Advanced design of single and n-tier applications using Python, C#, and .NET. 
+                    Focus on software engineering models, design patterns, testing, and debugging.
+                  </li>
+                  <li>
+                    <strong>Research Methods:</strong> 
+                    Developing research proposals, design thinking, and quantitative/qualitative methodologies 
+                    for the final industry-based capstone project.
+                  </li>
+                  <li>
+                    <strong>Quantum Computing:</strong> 
+                    Exploration of quantum algorithms, teleportation, superdense coding, 
+                    entanglement, and coherence with practical applications.
+                  </li>
+                  <li>
+                    <strong>Data Analytics:</strong> 
+                    Data modeling, visualization, and dashboards with machine learning for predictive, 
+                    diagnostic, and prescriptive business insights.
+                  </li>
+                  <li>
+                    <strong>Blockchain & Decentralised Identity:</strong> 
+                    Blockchain fundamentals, smart contracts, digital currency, cryptographic security, 
+                    and decentralised digital identity systems.
+                  </li>
+                  <li>
+                    <strong>Cloud Security:</strong> 
+                    Principles and innovative solutions for securing cloud ecosystems across 
+                    infrastructure and enterprise environments.
+                  </li>
+                  <li>
+                    <strong>Intelligent Transportation Systems (ITS):</strong> 
+                    AI and ML in transportation networks, public transport architecture, 
+                    urban planning, and cybersecurity for ITS applications.
+                  </li>
+                  <li>
+                    <strong>Industry-based Capstone Project:</strong> 
+                    Integration of all coursework into a final applied research project 
+                    — from proposal to delivery — showcasing advanced software engineering and research skills.
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
 
           {/* Bachelor's Degree */}
           <div>
-            <h4 className="text-xl font-semibold text-gray-800">
-              Bachelor of Science in Computer Science
-            </h4>
-            <span className="block text-gray-600 text-sm mb-3">2004 – 2008 | AMA Computer University, Philippines</span>
-            <p className="text-gray-700">
-              Gained a solid foundation in programming, algorithms, and system development. 
-              Built early projects in <strong>C#, VB.Net, and SQL Server</strong> which shaped 
-              my career in enterprise software engineering.
-            </p>
-          </div>
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => setOpenBachelor(!openBachelor)}
+            >
+              <h4 className="text-xl font-semibold text-gray-800">
+                Bachelor of Science in Computer Science
+              </h4>
+              {openBachelor ? <FaChevronUp /> : <FaChevronDown />}
+            </div>
+            <span className="block text-gray-600 text-sm mb-3">
+              2004 – 2008 | AMA Computer University, Philippines
+            </span>
 
+            {openBachelor && (
+              <p className="text-gray-700">
+                Built a strong foundation in programming, algorithms, and systems development. 
+                Early projects in <strong>C#, VB.Net, and SQL Server</strong> prepared me for a 
+                professional career in enterprise software engineering.
+              </p>
+            )}
+          </div>
         </div>
       </section>
 
@@ -345,74 +412,81 @@ export default function App() {
       {/* Experience Section */}
       <section id="experience" className="px-10 py-20 bg-gray-50">
         <h3 className="text-3xl font-bold mb-10 text-gray-800">Experience</h3>
-        
-        <div className="relative border-l-4 border-blue-500 pl-6 space-y-12">
-          
-          {/* Satellite Office */}
-          <div>
-            <h4 className="text-xl font-semibold text-gray-800">
-              Senior Software Engineer – Satellite Office (Smartgroup Australia)
-            </h4>
-            <span className="block text-gray-600 text-sm mb-3">2023 – 2025 | Auckland, NZ / Manila, PH</span>
-            <ul className="list-disc ml-5 text-gray-700 space-y-2">
-              <li>Developed, maintained, and supported financial and salary packaging systems using <strong>C#, .NET Core, SQL Server, and Azure DevOps</strong>.</li>
-              <li>Improved system performance and maintainability through <strong>microservices</strong> and <strong>CI/CD pipelines</strong>.</li>
-              <li>Collaborated with Australian teams to deliver high-impact solutions for enterprise clients.</li>
-            </ul>
-          </div>
 
-          {/* Willis Towers Watson */}
-          <div>
-            <h4 className="text-xl font-semibold text-gray-800">
-              Senior Software Engineer – Willis Towers Watson
-            </h4>
-            <span className="block text-gray-600 text-sm mb-3">2020 – 2023 | Manila, PH</span>
-            <ul className="list-disc ml-5 text-gray-700 space-y-2">
-              <li>Led development of the <strong>ACE Solutions Delivery</strong> and benefits management platforms using <strong>C#, ASP.NET MVC, Angular, SQL Server, and Azure</strong>.</li>
-              <li>Integrated <strong>CI/CD (Bamboo, Azure DevOps)</strong> pipelines to improve deployment speed and quality.</li>
-              <li>Collaborated across global teams to support enterprise-scale HR and benefits systems.</li>
-            </ul>
-          </div>
-
-          {/* AXA Philippines */}
-          <div>
-            <h4 className="text-xl font-semibold text-gray-800">
-              Senior Software Engineer – AXA Philippines
-            </h4>
-            <span className="block text-gray-600 text-sm mb-3">2018 – 2020 | Manila, PH</span>
-            <ul className="list-disc ml-5 text-gray-700 space-y-2">
-              <li>Developed and maintained insurance and customer portals using <strong>.NET Core, Angular, REST APIs, and SQL Server</strong>.</li>
-              <li>Delivered digital transformation initiatives for online claims, policy management, and payment systems.</li>
-              <li>Optimized existing codebase, boosting application stability and maintainability.</li>
-            </ul>
-          </div>
-
-          {/* Eclaro International */}
-          <div>
-            <h4 className="text-xl font-semibold text-gray-800">
-              Systems Analyst / Software Engineer – Eclaro International
-            </h4>
-            <span className="block text-gray-600 text-sm mb-3">2015 – 2017 | Manila, PH</span>
-            <ul className="list-disc ml-5 text-gray-700 space-y-2">
-              <li>Designed and developed HR and enterprise systems using <strong>C#, ASP.NET, SQL Server, and MVC architecture</strong>.</li>
-              <li>Collaborated with US-based clients for requirements gathering and system enhancements.</li>
-              <li>Implemented reporting solutions via <strong>SSRS</strong> and custom dashboards.</li>
-            </ul>
-          </div>
-
-          {/* Equitable Computer Services (Equicom) */}
-          <div>
-            <h4 className="text-xl font-semibold text-gray-800">
-              Software Engineer – Equitable Computer Services (Equicom)
-            </h4>
-            <span className="block text-gray-600 text-sm mb-3">2008 – 2015 | Manila, PH</span>
-            <ul className="list-disc ml-5 text-gray-700 space-y-2">
-              <li>Delivered and maintained enterprise applications for banking and healthcare sectors using <strong>C#, .NET Framework, SQL Server, and Crystal Reports</strong>.</li>
-              <li>Led key projects for billing, HRIS, and healthcare management systems.</li>
-              <li>Introduced automation and reporting improvements that enhanced productivity and accuracy.</li>
-            </ul>
-          </div>
-
+        <div className="space-y-6">
+          {[
+            {
+              role: "Senior Software Engineer – Satellite Office (Smartgroup Australia)",
+              period: "2023 – 2025 | Auckland, NZ / Manila, PH",
+              details: [
+                "Developed and supported salary packaging and financial systems using C#, .NET Core, SQL Server, and Azure DevOps.",
+                "Improved scalability and maintainability with microservices and CI/CD pipelines.",
+                "Collaborated with Australian teams to deliver enterprise-grade solutions."
+              ]
+            },
+            {
+              role: "Senior Software Engineer – Willis Towers Watson",
+              period: "2020 – 2023 | Manila, PH",
+              details: [
+                "Led development of ACE Solutions Delivery, BrightChoices, Benefit Access, and FSA Portal.",
+                "Enhanced platforms using C#, ASP.NET MVC, Angular, SQL Server, and Azure.",
+                "Implemented CI/CD with Bamboo and Azure DevOps to improve deployment speed and quality.",
+                "Collaborated with global teams on HR and employee benefits systems."
+              ]
+            },
+            {
+              role: "Senior Software Engineer – AXA Philippines",
+              period: "2018 – 2020 | Manila, PH",
+              details: [
+                "Built insurance customer portals for policy management, claims, and payments.",
+                "Modernized applications using .NET Core, Angular, REST APIs, and SQL Server.",
+                "Delivered initiatives that boosted digital transformation and client experience."
+              ]
+            },
+            {
+              role: "Systems Analyst / Software Engineer – Eclaro International",
+              period: "2015 – 2017 | Manila, PH",
+              details: [
+                "Designed and developed HRIS and enterprise apps with C#, ASP.NET, and MVC.",
+                "Worked with US-based clients on requirements gathering and enhancements.",
+                "Delivered reports and dashboards with SSRS and SQL Server."
+              ]
+            },
+            {
+              role: "Software Engineer – Equitable Computer Services (Equicom)",
+              period: "2008 – 2015 | Manila, PH",
+              details: [
+                "Maintained enterprise applications for banking and healthcare sectors.",
+                "Key projects: billing, HRIS, and healthcare management systems.",
+                "Stack: C#, .NET Framework, SQL Server, SSRS, and Crystal Reports.",
+                "Introduced automation and reporting improvements that increased productivity."
+              ]
+            }
+          ].map((job, idx) => (
+            <div key={idx} className="border rounded-lg shadow bg-white">
+              <button
+                onClick={() =>
+                  setOpen(open === idx ? null : idx)
+                }
+                className="w-full flex justify-between items-center px-6 py-4 text-left"
+              >
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-800">{job.role}</h4>
+                  <span className="block text-sm text-gray-600">{job.period}</span>
+                </div>
+                <span className="text-blue-600 text-2xl">
+                  {open === idx ? "−" : "+"}
+                </span>
+              </button>
+              {open === idx && (
+                <ul className="list-disc ml-10 mr-6 mb-6 text-gray-700 space-y-2">
+                  {job.details.map((d, i) => (
+                    <li key={i}>{d}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
         </div>
       </section>
 
