@@ -14,10 +14,10 @@ import {
 } from "react-icons/si";
 
 export default function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);   // ✅ renamed from open
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openMaster, setOpenMaster] = useState(false);
   const [openBachelor, setOpenBachelor] = useState(false);
-  const [openJob, setOpenJob] = useState(null);          // ✅ renamed for Experience
+  const [openJob, setOpenJob] = useState(null);
 
   return (
     <div className="font-sans bg-gray-50 min-h-screen">
@@ -544,7 +544,7 @@ export default function App() {
                 ]
               },
               {
-                role: "Senior Software Engineer – AXA Philippines",
+                role: "Core Software Developer – AXA Philippines",
                 period: "2018 – 2020 | Manila, PH",
                 details: [
                   "Built insurance customer portals for policy management, claims, and payments.",
@@ -553,7 +553,7 @@ export default function App() {
                 ]
               },
               {
-                role: "Systems Analyst / Software Engineer – Eclaro International",
+                role: "C#.Net Developer – Eclaro International",
                 period: "2015 – 2017 | Manila, PH",
                 details: [
                   "Designed and developed HRIS and enterprise apps with C#, ASP.NET, and MVC.",
@@ -562,7 +562,7 @@ export default function App() {
                 ]
               },
               {
-                role: "Software Engineer – Equitable Computer Services (Equicom)",
+                role: "Lead Software Analyst – Equitable Computer Services (Equicom)",
                 period: "2008 – 2015 | Manila, PH",
                 details: [
                   "Maintained enterprise applications for banking and healthcare sectors.",
