@@ -1,11 +1,23 @@
 import { useState } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaBars, FaChevronDown, FaChevronUp } from "react-icons/fa";
+
+// FontAwesome icons
+import { 
+  FaGithub, FaLinkedin, FaEnvelope, FaBars, FaChevronDown, FaChevronUp,
+  FaCode, FaPython, FaPhp, FaJs, FaReact, FaHtml5, FaCss3Alt, 
+  FaGitAlt, FaDocker, FaDatabase, FaCloud, FaVial, FaProjectDiagram, FaTools, FaGlobe, FaServer
+} from "react-icons/fa";
+
+// SimpleIcons (only the ones that exist)
+import {
+  SiTypescript, SiAngular, SiBootstrap, SiTailwindcss,
+  SiKubernetes, SiMysql, SiDotnet
+} from "react-icons/si";
 
 export default function App() {
-  const [open, setOpen] = useState(false); // for mobile menu
-  const [openMaster, setOpenMaster] = useState(false); // for Master's degree collapse
-  const [openBachelor, setOpenBachelor] = useState(false); // for Bachelor's degree collapse
-  const [openJob, setOpenJob] = useState(null); // for Experience collapse
+  const [isMenuOpen, setIsMenuOpen] = useState(false);   // ✅ renamed from open
+  const [openMaster, setOpenMaster] = useState(false);
+  const [openBachelor, setOpenBachelor] = useState(false);
+  const [openJob, setOpenJob] = useState(null);          // ✅ renamed for Experience
 
   return (
     <div className="font-sans bg-gray-50 min-h-screen">
@@ -18,18 +30,18 @@ export default function App() {
           <a href="#skills" className="hover:text-blue-600">Skills</a>
           <a href="#contact" className="hover:text-blue-600">Contact</a>
         </div>
-        <button className="md:hidden" onClick={() => setOpen(!open)}>
+        <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <FaBars size={24} />
         </button>
       </nav>
 
       {/* Mobile Menu */}
-      {open && (
+      {isMenuOpen && (
         <div className="flex flex-col items-center gap-4 py-4 bg-white shadow-md md:hidden">
-          <a href="#about" onClick={() => setOpen(false)}>About</a>
-          <a href="#projects" onClick={() => setOpen(false)}>Projects</a>
-          <a href="#skills" onClick={() => setOpen(false)}>Skills</a>
-          <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+          <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
+          <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
+          <a href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</a>
+          <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
         </div>
       )}
 
@@ -328,8 +340,24 @@ export default function App() {
         <div className="mb-8">
           <h4 className="text-xl font-semibold text-gray-700 mb-3">Programming</h4>
           <div className="flex flex-wrap gap-3">
-            {["C#", "VB.Net", ".NET Core", ".NET Framework (Legacy)", "VB6", "VBA", "Python", "PHP", "TypeScript"].map(s => (
-              <span key={s} className="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg shadow">{s}</span>
+            {[
+              { name: "C#", icon: <SiDotnet /> },
+              { name: "VB.Net", icon: <FaCode /> },          // generic
+              { name: ".NET Core", icon: <SiDotnet /> },
+              { name: ".NET Framework (Legacy)", icon: <FaCode /> }, // generic
+              { name: "VB6", icon: <FaCode /> },             // generic
+              { name: "VBA", icon: <FaCode /> },             // generic
+              { name: "Python", icon: <FaPython /> },
+              { name: "PHP", icon: <FaPhp /> },
+              { name: "TypeScript", icon: <SiTypescript /> },
+              { name: "JavaScript", icon: <FaJs /> },
+            ].map(skill => (
+              <span
+                key={skill.name}
+                className="flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-800 rounded-lg shadow"
+              >
+                {skill.icon} {skill.name}
+              </span>
             ))}
           </div>
         </div>
@@ -338,8 +366,25 @@ export default function App() {
         <div className="mb-8">
           <h4 className="text-xl font-semibold text-gray-700 mb-3">Frontend & Web</h4>
           <div className="flex flex-wrap gap-3">
-            {["React", "Angular", "AngularJS", "ASP.NET", "MVC", "HTML5", "CSS", "JavaScript", "Bootstrap", "Kendo UI", "WordPress", "Tailwind CSS"].map(s => (
-              <span key={s} className="px-4 py-2 bg-green-100 text-green-800 rounded-lg shadow">{s}</span>
+            {[
+              { name: "React", icon: <FaReact /> },
+              { name: "Angular", icon: <SiAngular /> },
+              { name: "AngularJS", icon: <FaGlobe /> },      // generic web
+              { name: "ASP.NET", icon: <SiDotnet /> },
+              { name: "MVC", icon: <FaGlobe /> },            // generic web
+              { name: "HTML5", icon: <FaHtml5 /> },
+              { name: "CSS3", icon: <FaCss3Alt /> },
+              { name: "Bootstrap", icon: <SiBootstrap /> },
+              { name: "Kendo UI", icon: <FaGlobe /> },       // generic web
+              { name: "WordPress", icon: <FaGlobe /> },      // generic web
+              { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+            ].map(skill => (
+              <span
+                key={skill.name}
+                className="flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-lg shadow"
+              >
+                {skill.icon} {skill.name}
+              </span>
             ))}
           </div>
         </div>
@@ -348,8 +393,13 @@ export default function App() {
         <div className="mb-8">
           <h4 className="text-xl font-semibold text-gray-700 mb-3">Backend & APIs</h4>
           <div className="flex flex-wrap gap-3">
-            {["Web API", "WCF", "SOAP", "REST", "Microservices", "SOA", "Layered Architecture"].map(s => (
-              <span key={s} className="px-4 py-2 bg-purple-100 text-purple-800 rounded-lg shadow">{s}</span>
+            {["Web API","WCF","SOAP","REST","Microservices","SOA","Layered Architecture"].map(skill => (
+              <span
+                key={skill}
+                className="flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-800 rounded-lg shadow"
+              >
+                <FaServer /> {skill}
+              </span>
             ))}
           </div>
         </div>
@@ -358,8 +408,23 @@ export default function App() {
         <div className="mb-8">
           <h4 className="text-xl font-semibold text-gray-700 mb-3">Databases & Reporting</h4>
           <div className="flex flex-wrap gap-3">
-            {["SQL Server", "MySQL", "SQLite", "MS Access", "DB2", "Oracle", "SSIS", "SSRS", "Crystal Reports"].map(s => (
-              <span key={s} className="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-lg shadow">{s}</span>
+            {[
+              { name: "SQL Server", icon: <FaDatabase /> },
+              { name: "MySQL", icon: <SiMysql /> },
+              { name: "SQLite", icon: <FaDatabase /> },
+              { name: "MS Access", icon: <FaDatabase /> },
+              { name: "DB2", icon: <FaDatabase /> },
+              { name: "Oracle", icon: <FaDatabase /> },
+              { name: "SSIS", icon: <FaDatabase /> },
+              { name: "SSRS", icon: <FaDatabase /> },
+              { name: "Crystal Reports", icon: <FaDatabase /> },
+            ].map(skill => (
+              <span
+                key={skill.name}
+                className="flex items-center gap-2 px-4 py-2 bg-yellow-100 text-yellow-800 rounded-lg shadow"
+              >
+                {skill.icon} {skill.name}
+              </span>
             ))}
           </div>
         </div>
@@ -368,8 +433,21 @@ export default function App() {
         <div className="mb-8">
           <h4 className="text-xl font-semibold text-gray-700 mb-3">Cloud & DevOps</h4>
           <div className="flex flex-wrap gap-3">
-            {["Microsoft Azure", "Azure Data", "Azure DevOps", "Docker", "Kubernetes", "Bamboo", "CI/CD"].map(s => (
-              <span key={s} className="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-lg shadow">{s}</span>
+            {[
+              { name: "Microsoft Azure", icon: <FaCloud /> },
+              { name: "Azure Data", icon: <FaCloud /> },
+              { name: "Azure DevOps", icon: <FaCloud /> },
+              { name: "Docker", icon: <FaDocker /> },
+              { name: "Kubernetes", icon: <SiKubernetes /> },
+              { name: "Bamboo", icon: <FaCloud /> },     // generic devops
+              { name: "CI/CD", icon: <FaCloud /> },
+            ].map(skill => (
+              <span
+                key={skill.name}
+                className="flex items-center gap-2 px-4 py-2 bg-indigo-100 text-indigo-800 rounded-lg shadow"
+              >
+                {skill.icon} {skill.name}
+              </span>
             ))}
           </div>
         </div>
@@ -378,32 +456,61 @@ export default function App() {
         <div className="mb-8">
           <h4 className="text-xl font-semibold text-gray-700 mb-3">Testing</h4>
           <div className="flex flex-wrap gap-3">
-            {["xUnit", "NUnit", "MS Unit Test", "Moq", "Rhino Mocks", "SpecFlow", "Selenium", "Cypress"].map(s => (
-              <span key={s} className="px-4 py-2 bg-rose-100 text-rose-800 rounded-lg shadow">{s}</span>
+            {["xUnit","NUnit","MS Unit Test","Moq","Rhino Mocks","SpecFlow","Selenium","Cypress"].map(skill => (
+              <span
+                key={skill}
+                className="flex items-center gap-2 px-4 py-2 bg-red-100 text-red-800 rounded-lg shadow"
+              >
+                <FaVial /> {skill}
+              </span>
             ))}
           </div>
         </div>
 
-        {/* Version Control, Methodologies & Practices */}
+        {/* Version Control & Practices */}
         <div className="mb-8">
           <h4 className="text-xl font-semibold text-gray-700 mb-3">Version Control, Methodologies & Practices</h4>
           <div className="flex flex-wrap gap-3">
             {[
-              "GitHub","GitBash","TFS","SVN","Tortoise",
-              "Agile (SCRUM)","Kanban","Waterfall",
-              "OOP","SOLID","Repository Pattern","Unit of Work","MVC","MVVM"
-            ].map(s => (
-              <span key={s} className="px-4 py-2 bg-teal-100 text-teal-800 rounded-lg shadow">{s}</span>
+              { name: "GitHub", icon: <FaGithub /> },
+              { name: "GitBash", icon: <FaProjectDiagram /> },
+              { name: "TFS", icon: <FaProjectDiagram /> },
+              { name: "SVN", icon: <FaProjectDiagram /> },
+              { name: "Tortoise", icon: <FaProjectDiagram /> },
+              { name: "Agile (SCRUM)", icon: <FaProjectDiagram /> },
+              { name: "Kanban", icon: <FaProjectDiagram /> },
+              { name: "Waterfall", icon: <FaProjectDiagram /> },
+              { name: "OOP", icon: <FaProjectDiagram /> },
+              { name: "SOLID", icon: <FaProjectDiagram /> },
+              { name: "Repository Pattern", icon: <FaProjectDiagram /> },
+              { name: "Unit of Work", icon: <FaProjectDiagram /> },
+              { name: "MVC", icon: <FaProjectDiagram /> },
+              { name: "MVVM", icon: <FaProjectDiagram /> },
+            ].map(skill => (
+              <span
+                key={skill.name}
+                className="flex items-center gap-2 px-4 py-2 bg-teal-100 text-teal-800 rounded-lg shadow"
+              >
+                {skill.icon} {skill.name}
+              </span>
             ))}
           </div>
         </div>
 
         {/* Others */}
-        <div>
+        <div className="mb-8">
           <h4 className="text-xl font-semibold text-gray-700 mb-3">Others</h4>
           <div className="flex flex-wrap gap-3">
-            {["PDF Pro", "Photoshop"].map(s => (
-              <span key={s} className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg shadow">{s}</span>
+            {[
+              { name: "PDF Pro", icon: <FaTools /> },
+              { name: "Photoshop", icon: <FaTools /> },
+            ].map(skill => (
+              <span
+                key={skill.name}
+                className="flex items-center gap-2 px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow"
+              >
+                {skill.icon} {skill.name}
+              </span>
             ))}
           </div>
         </div>
@@ -466,7 +573,7 @@ export default function App() {
             <div key={idx} className="border rounded-lg shadow bg-white">
               <button
                 onClick={() =>
-                  setOpen(open === idx ? null : idx)
+                  setOpenJob(openJob === idx ? null : idx)   // ✅ uses openJob now
                 }
                 className="w-full flex justify-between items-center px-6 py-4 text-left"
               >
@@ -475,10 +582,10 @@ export default function App() {
                   <span className="block text-sm text-gray-600">{job.period}</span>
                 </div>
                 <span className="text-blue-600 text-2xl">
-                  {open === idx ? "−" : "+"}
+                  {openJob === idx ? "−" : "+"}
                 </span>
               </button>
-              {open === idx && (
+              {openJob === idx && (
                 <ul className="list-disc ml-10 mr-6 mb-6 text-gray-700 space-y-2">
                   {job.details.map((d, i) => (
                     <li key={i}>{d}</li>
