@@ -320,7 +320,7 @@ export default function App() {
                 {openBachelor ? <FaChevronUp /> : <FaChevronDown />}
               </div>
               <span className="block text-gray-600 text-sm mb-3">
-                2004 – 2008 | AMA Computer University, Philippines
+                2004 – 2008 | Filamer Christian University, Philippines
               </span>
 
               {openBachelor && (
