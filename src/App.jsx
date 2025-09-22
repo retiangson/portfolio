@@ -13,11 +13,26 @@ import {
   SiKubernetes, SiMysql, SiDotnet
 } from "react-icons/si";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+
+
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openMaster, setOpenMaster] = useState(false);
   const [openBachelor, setOpenBachelor] = useState(false);
   const [openJob, setOpenJob] = useState(null);
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+      mirror: true,
+    });
+    AOS.refresh();
+  }, []);
 
   return (
     <div className="font-sans bg-gray-50 min-h-screen">
@@ -47,7 +62,8 @@ export default function App() {
       )}
 
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row items-center justify-center text-center md:text-left px-10 py-20 bg-gradient-to-r from-blue-100 to-blue-50">
+      <section className="flex flex-col md:flex-row items-center justify-center text-center md:text-left px-10 py-20 bg-gradient-to-r from-blue-100 to-blue-50"  
+      data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div className="max-w-xl">
           <h2 className="text-4xl font-bold text-gray-800">Hi, I’m Ronald 👋</h2>
           <p className="mt-4 text-lg text-gray-600">
@@ -69,9 +85,10 @@ export default function App() {
         />
       </section>
       
-      <div className="max-w-screen-lg mx-auto px-4">
+      {/* Content Section */}
+      <div className="max-w-screen-lg mx-auto px-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         {/* About Section */}
-        <section id="about" className="px-10 py-20 bg-white">
+        <section id="about" className="px-10 py-20 bg-white" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h3 className="text-3xl font-bold mb-6 text-gray-800">About Me</h3>
           <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
             I am a seasoned <strong>Full-Stack Software Engineer</strong> with over 
@@ -96,13 +113,13 @@ export default function App() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="px-10 py-20 bg-white">
+        <section id="projects" className="px-10 py-20 bg-white" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h3 className="text-3xl font-bold mb-10 text-gray-800">Projects</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             {/* Satellite Office – Salary Packaging */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h4 className="text-xl font-semibold text-gray-800">Salary Packaging & Financial Systems</h4>
               <p className="text-gray-700 mt-2">
                 Built and maintained enterprise-grade salary packaging and financial systems at Smartgroup 
@@ -114,7 +131,7 @@ export default function App() {
             </div>
 
             {/* Willis Towers Watson – BrightChoices */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h4 className="text-xl font-semibold text-gray-800">BrightChoices</h4>
               <p className="text-gray-700 mt-2">
                 Employee benefits marketplace where users explore, compare, and enroll in health and 
@@ -126,7 +143,7 @@ export default function App() {
             </div>
 
             {/* Willis Towers Watson – Benefit Access */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h4 className="text-xl font-semibold text-gray-800">Benefit Access</h4>
               <p className="text-gray-700 mt-2">
                 Secure platform for employees to access and manage workplace benefits. 
@@ -138,7 +155,7 @@ export default function App() {
             </div>
 
             {/* Willis Towers Watson – FSA Portal */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h4 className="text-xl font-semibold text-gray-800">FSA Portal</h4>
               <p className="text-gray-700 mt-2">
                 Flexible Spending Account portal enabling employees to manage contributions, reimbursements, 
@@ -150,7 +167,7 @@ export default function App() {
             </div>
 
             {/* AXA Philippines – Customer Portals */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h4 className="text-xl font-semibold text-gray-800">Insurance Customer Portals</h4>
               <p className="text-gray-700 mt-2">
                 Built online portals at AXA Philippines for <strong>policy management, claims processing, 
@@ -162,7 +179,7 @@ export default function App() {
             </div>
 
             {/* Equicom & Eclaro – HR & Healthcare Systems */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h4 className="text-xl font-semibold text-gray-800">HR & Healthcare Systems</h4>
               <p className="text-gray-700 mt-2">
                 Designed and developed HRIS, billing, and healthcare management applications at Equicom 
@@ -174,7 +191,7 @@ export default function App() {
             </div>
 
             {/* GitHub Projects */}
-            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h4 className="text-xl font-semibold text-gray-800">Car Rental System</h4>
               <p className="text-gray-700 mt-2">
                 Full-stack project for Yoobee MSE800 using layered architecture, UML diagrams, and 
@@ -186,7 +203,7 @@ export default function App() {
               </a>
             </div>
 
-            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h4 className="text-xl font-semibold text-gray-800">Store Management System</h4>
               <p className="text-gray-700 mt-2">
                 CLI-based Python app with SQLAlchemy for data persistence, validation, and testing.
@@ -197,7 +214,7 @@ export default function App() {
               </a>
             </div>
 
-            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h4 className="text-xl font-semibold text-gray-800">HR System</h4>
               <p className="text-gray-700 mt-2">
                 Object-Oriented Python HR system showcasing encapsulation, inheritance, and modular design.
@@ -208,7 +225,7 @@ export default function App() {
               </a>
             </div>
 
-            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h4 className="text-xl font-semibold text-gray-800">Quantum Computing with Qiskit</h4>
               <p className="text-gray-700 mt-2">
                 Academic experiments using Qiskit: quantum circuits, oracles, Grover’s Search, 
@@ -220,7 +237,7 @@ export default function App() {
               </a>
             </div>
 
-            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <h4 className="text-xl font-semibold text-gray-800">Python OOP & Assignments</h4>
               <p className="text-gray-700 mt-2">
                 A collection of Python assignments for Yoobee MSE modules, covering OOP design, 
@@ -236,7 +253,7 @@ export default function App() {
         </section>
 
         {/* Education Section */}
-        <section id="education" className="px-10 py-20 bg-gray-50">
+        <section id="education" className="px-10 py-20 bg-gray-50" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h3 className="text-3xl font-bold mb-10 text-gray-800">Education</h3>
 
           <div className="relative border-l-4 border-indigo-500 pl-6 space-y-12">
@@ -335,11 +352,11 @@ export default function App() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="px-10 py-16 bg-gray-50">
+        <section id="skills" className="px-10 py-16 bg-gray-50" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h3 className="text-3xl font-bold mb-8 text-gray-800">Skills</h3>
 
           {/* Programming */}
-          <div className="mb-8">
+          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h4 className="text-xl font-semibold text-gray-700 mb-3">Programming</h4>
             <div className="flex flex-wrap gap-3">
               {[
@@ -365,7 +382,7 @@ export default function App() {
           </div>
 
           {/* Frontend & Web */}
-          <div className="mb-8">
+          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h4 className="text-xl font-semibold text-gray-700 mb-3">Frontend & Web</h4>
             <div className="flex flex-wrap gap-3">
               {[
@@ -392,7 +409,7 @@ export default function App() {
           </div>
 
           {/* Backend & APIs */}
-          <div className="mb-8">
+          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h4 className="text-xl font-semibold text-gray-700 mb-3">Backend & APIs</h4>
             <div className="flex flex-wrap gap-3">
               {["Web API","WCF","SOAP","REST","Microservices","SOA","Layered Architecture"].map(skill => (
@@ -407,7 +424,7 @@ export default function App() {
           </div>
 
           {/* Databases & Reporting */}
-          <div className="mb-8">
+          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h4 className="text-xl font-semibold text-gray-700 mb-3">Databases & Reporting</h4>
             <div className="flex flex-wrap gap-3">
               {[
@@ -432,7 +449,7 @@ export default function App() {
           </div>
 
           {/* Cloud & DevOps */}
-          <div className="mb-8">
+          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h4 className="text-xl font-semibold text-gray-700 mb-3">Cloud & DevOps</h4>
             <div className="flex flex-wrap gap-3">
               {[
@@ -455,7 +472,7 @@ export default function App() {
           </div>
 
           {/* Testing */}
-          <div className="mb-8">
+          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h4 className="text-xl font-semibold text-gray-700 mb-3">Testing</h4>
             <div className="flex flex-wrap gap-3">
               {["xUnit","NUnit","MS Unit Test","Moq","Rhino Mocks","SpecFlow","Selenium","Cypress"].map(skill => (
@@ -470,7 +487,7 @@ export default function App() {
           </div>
 
           {/* Version Control & Practices */}
-          <div className="mb-8">
+          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h4 className="text-xl font-semibold text-gray-700 mb-3">Version Control, Methodologies & Practices</h4>
             <div className="flex flex-wrap gap-3">
               {[
@@ -500,7 +517,7 @@ export default function App() {
           </div>
 
           {/* Others */}
-          <div className="mb-8">
+          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h4 className="text-xl font-semibold text-gray-700 mb-3">Others</h4>
             <div className="flex flex-wrap gap-3">
               {[
@@ -519,7 +536,7 @@ export default function App() {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="px-10 py-20 bg-gray-50">
+        <section id="experience" className="px-10 py-20 bg-gray-50" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h3 className="text-3xl font-bold mb-10 text-gray-800">Experience</h3>
 
           <div className="space-y-6">
@@ -572,10 +589,10 @@ export default function App() {
                 ]
               }
             ].map((job, idx) => (
-              <div key={idx} className="border rounded-lg shadow bg-white">
+              <div key={idx} className="border rounded-lg shadow bg-white"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <button
                   onClick={() =>
-                    setOpenJob(openJob === idx ? null : idx)   // ✅ uses openJob now
+                    setOpenJob(openJob === idx ? null : idx) 
                   }
                   className="w-full flex justify-between items-center px-6 py-4 text-left"
                 >
@@ -599,8 +616,9 @@ export default function App() {
           </div>
         </section>
       </div>
+
       {/* Contact Section */}
-      <section id="contact" className="px-10 py-20 bg-white text-center">
+      <section id="contact" className="px-10 py-20 bg-white text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <h3 className="text-3xl font-bold mb-6 text-gray-800">Get In Touch</h3>
         <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-10">
           Interested in collaborating, hiring, or just want to connect? 
@@ -639,7 +657,7 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-6 text-center bg-white border-t mt-10 text-gray-500">
+      <footer className="py-6 text-center bg-white border-t mt-10 text-gray-500" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         © 2025 Ronald Tiangson. All rights reserved.
       </footer>
 
