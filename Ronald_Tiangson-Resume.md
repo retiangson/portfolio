@@ -2,7 +2,9 @@
 
 **Location:** Unit 2/18 Hetherington Road, Ranui, Auckland 0612, New Zealand  
 **Phone:** 020-471-8827  
-**Email:** [retiangson@gmail.com](mailto:retiangson@gmail.com)
+**Email:** [retiangson@gmail.com](mailto:retiangson@gmail.com)  
+**LinkedIn:** [linkedin.com/in/retiangson](https://www.linkedin.com/in/retiangson/)  
+**Portfolio:** [retiangson.github.io/portfolio](https://retiangson.github.io/portfolio)
 
 ---
 
