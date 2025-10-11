@@ -35,7 +35,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="font-sans bg-gray-50 min-h-screen bg-cover bg-center bg-no-repeat bg-fixed text-white" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}portfolio/back.webp')` }}>
+    <div className="font-sans bg-gray-50 min-h-screen bg-cover bg-center bg-no-repeat bg-fixed text-white" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}back.webp')` }}>
 
       {/* Navbar */}
       <nav className="flex justify-between items-center px-6 py-4 shadow-md bg-white sticky top-0 z-50">
