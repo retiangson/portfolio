@@ -1,28 +1,30 @@
 # Ronald Ephraim Tiangson
 
 **Location:** Unit 2/18 Hetherington Road, Ranui, Auckland 0612, New Zealand  
-**Phone:** 020-471-8828  
-**Email:** [retiangson@gmail.com](mailto:retiangson@gmail.com)
+**Phone:** 020-471-8827  
+**Email:** [retiangson@gmail.com](mailto:retiangson@gmail.com)  
+**LinkedIn:** [linkedin.com/in/retiangson](https://www.linkedin.com/in/retiangson/)  
+**Portfolio:** [retiangson.github.io/portfolio](https://retiangson.github.io/portfolio)
 
 ---
 
 ## Career Summary
-Software Engineer, 16+ years experience building enterprise & business applications in insurance, health care, finance industires. Skilled in .NET, SQL Server, Angular, Python, React and cloud platforms. Extensive exposure to full stack development practices, DevOps & Agile.  
+Software Engineer with 16+ years of experience building enterprise and business applications in the insurance, healthcare, and finance industries. Skilled in .NET, SQL Server, Angular, Python, React, and cloud platforms. Extensive exposure to full stack development practices, DevOps, and Agile.  
 
-At the moment finishing a **M.S. degree in Software Engineering at Yoobee College, New Zealand (2025–2026)**, specialized for advanced software engineering, architecture, and research.  
+Currently completing a **Master of Software Engineering at Yoobee College, New Zealand (2025–2026)**, specializing in advanced software engineering, architecture, and research.  
 
-Open to **Sr/Mid-Level/Startup roles** with a great appetite for learning new technology and assimilating in a rapidly changing environment where I can add value right away.  
+Open to **Senior, Mid-Level, or Startup roles**, with a strong appetite for learning new technologies and adapting in rapidly changing environments where I can add value immediately.  
 
 ---
 
 ## Skills
 
 - **Programming:** Python, C#, VB.Net, .Net Core, .Net Framework, VB6, VBA  
-- **Web Development:** React, ASP.Net, MVC, HTML5, CSS, JavaScript, Angular, TypeScript, Bootstrap, PHP, WordPress  
+- **Web Development:** React, ASP.Net, MVC, HTML5, CSS, JavaScript, Angular, TypeScript, Bootstrap, PHP  
 - **Cloud & DevOps:** Microsoft Azure, Docker, Kubernetes, Azure DevOps, Bamboo, CI/CD pipelines  
 - **Databases:** SQL Server, MySQL, Oracle, SQLite, DB2, MS Access, SSIS/SSRS, Crystal Reports  
 - **Testing:** NUnit, Xunit, Moq, Specflow, Selenium, Cypress, MS Unit Test  
-- **Practices:** OOP, SOLID, Repository & Service Layer Patterns, Microservices vs. SOA vs. Layered Architecture  
+- **Practices:** OOP, SOLID, Repository & Service Layer Patterns, Microservices, SOA, Layered Architecture  
 - **Tools:** GitHub, TFS, SVN, Jira, Confluence, Visual Studio, Azure Data  
 
 ---
@@ -31,56 +33,49 @@ Open to **Sr/Mid-Level/Startup roles** with a great appetite for learning new te
 
 ### Application Analyst Developer  
 **Satellite Office / Smartgroup Australia | Jul 2023 – Jul 2025**  
-- Developed new apps and provided maintenance support for legacy systems in the corporate, health, education, and government space.  
-- Tweaked SQL stored procedures to improve data fetching speed by approx.  
+- Developed new apps and provided maintenance support for legacy systems in the corporate space.  
+- Optimized SQL stored procedures to improve data retrieval speed.  
 - Developed reports with SSRS and PDF Pro to provide stakeholders with data-driven insights.  
-- Code reviewed and enforced coding standards to ensure long-term maintainability.  
-- Implemented unit, integration and automating tests to guarantee system stability.  
-- Worked closely with project managers and business analysts to fit features to client goals.  
+- Conducted code reviews and enforced coding standards to ensure long-term maintainability.  
+- Implemented unit, integration, and automated tests to guarantee system stability.  
+- Collaborated with project managers and business analysts to align features with client goals.  
 
 ---
 
 ### Senior Software Engineer  
 **Willis Towers Watson | Mar 2020 – Jul 2023**  
-- Supported and improved employee benefits systems (BrightChoices, Benefit Access, FSA Portal).  
-- Designed, developed and released features from end to end over .NET and C#.  
-- Implemented automated testing using Selenium, SpecFlow and Cypress resulting in a 25% reduction of bugs.  
-- Conducted interactive sessions to share knowledge and upscale teams.  
-- Helped in recruitment by conducting interviews and technical evaluations of candidates.  
+- Supported and enhanced employee benefits systems (BrightChoices, Benefit Access, FSA Portal).  
+- Designed, developed, and delivered features end-to-end using .NET and C#.  
+- Implemented automated testing with Selenium, SpecFlow, and Cypress, reducing defects by **25%**.  
+- Facilitated knowledge-sharing sessions to upskill teams.  
+- Assisted recruitment efforts by conducting technical interviews and evaluations.  
 
 ---
 
 ### .Net Core Developer  
 **AXA Philippines | Aug 2018 – Mar 2020**  
-- Established the sales distribution strategy for existing and new products in all channels.  
-- Created an appealing employer brand identity that attracted talent to join AXA prospering business by developing and implementing recruitment initiatives, TNA and incentive program.  
 - Developed and implemented new components for ACE Solutions Delivery.  
-- Minimized troubleshooting and errors with a proactive problem-solving approach and teamwork.  
-- Ensured high system reliability by writing 100% unit test coverage.  
-- Enhanced reporting accuracy and efficiency via SQL tuning.  
-
----
-
-### Full-stack Developer  
-**L.R.B. Medical & Maternity Clinic | Jan 2018 – Aug 2018**  
-- Designed and developed a clinic system with .NET Core, Angular and SQL.  
-- Developed new workflows and reports that increased the efficiency of operations.  
-- Interfaced with end users in the business to go beyond what they were asking for.  
+- Proactively minimized troubleshooting and errors through teamwork and problem-solving.  
+- Ensured high reliability by writing **100% unit test coverage**.  
+- Enhanced reporting accuracy and performance through SQL optimization.  
 
 ---
 
 ### Earlier Roles
+- **Full-stack Developer – L.R.B. Medical & Maternity Clinic (2018)**  
+  Built and maintained a clinic system using .NET Core, Angular, and SQL Server; developed workflows and reports that improved operational efficiency.  
+
 - **C#.Net Developer – Eclaro International Inc. (2015 – 2017)**  
-  Converted DB2 to SQL Server, re-factored apps, and implemented coding standards.  
+  Converted DB2 to SQL Server, re-engineered apps, and enforced coding standards.  
 
 - **Lead Software Analyst – Equitable Computer Services, Inc. (2008 – 2015)**  
-  Managed a 3-developer team and produced high-volume applications, while coaching junior engineers.  
+  Managed a 3-developer team and delivered high-volume applications while mentoring junior engineers.  
 
 ---
 
 ## Education
 
-**Master of Software Engineering – Currently Studying (2025–2026)**  
+**Master of Software Engineering – In Progress (2025–2026)**  
 Yoobee College of Creative Innovation, New Zealand  
 
 **Bachelor of Science in Computer Science**  
