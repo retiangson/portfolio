@@ -81,7 +81,7 @@ export default function App() {
         <img
           src={`${import.meta.env.BASE_URL}profile.jpg`}
           alt="Profile"
-          className="rounded-full w-64 h-64 mt-10 md:mt-0 shadow-lg"
+          className="rounded-full w-64 h-64 mt-10 md:mt-0 shadow-lg opacity-80  grayscale-[30%]"
         />
       </section>
       
