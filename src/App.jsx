@@ -35,10 +35,10 @@ export default function App() {
   }, []);
 
   return (
-    <div className="font-sans bg-gray-50 min-h-screen bg-cover bg-center bg-no-repeat bg-fixed text-gray-100" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}back.webp')` }}>
+    <div className="font-sans px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl min-h-screen bg-cover bg-center bg-no-repeat bg-fixed text-gray-100" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}back.webp')` }}>
 
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-6 py-4 shadow-md bg-white sticky top-0 z-50">
+      <nav className="flex justify-between items-center px-6 py-4 shadow-md px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl sticky top-0 z-50">
         <h1 className="text-2xl font-bold text-blue-600">MyPortfolio</h1>
         <div className="hidden md:flex gap-6">
           <a href="#about" className="hover:text-blue-600">About</a>
@@ -53,7 +53,7 @@ export default function App() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="flex flex-col items-center gap-4 py-4 bg-white shadow-md md:hidden">
+        <div className="flex flex-col items-center gap-4 py-4 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl shadow-md md:hidden">
           <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
           <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
           <a href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</a>
@@ -62,16 +62,16 @@ export default function App() {
       )}
 
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row items-center justify-center text-center md:text-left px-10 py-20 bg-gradient-to-r from-blue-100 to-blue-50"  
+      <section className="flex flex-col md:flex-row items-center justify-center text-center md:text-left px-10 py-20 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl from-blue-100 to-blue-50"  
       data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div className="max-w-xl">
-          <h2 className="text-4xl font-bold text-gray-800">Hi, I’m Ronald 👋</h2>
-          <p className="mt-4 text-lg text-gray-600">
+        <div className="max-w-xl bg-transparent">
+          <h2 className="text-4xl font-bold text-teal-300">Hi, I’m Ronald 👋</h2>
+          <p className="mt-4 text-lg text-gray-100">
             A Software Engineer passionate about building scalable apps, cloud solutions, and innovative tech.
           </p>
           <div className="mt-6 flex gap-4 justify-center md:justify-start">
             <a href="#projects" className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
-              View My Work
+              View My Works
             </a>
             <a href="#contact" className="px-6 py-3 border border-blue-600 rounded-lg hover:bg-blue-50">
               Contact Me
@@ -88,9 +88,9 @@ export default function App() {
       {/* Content Section */}
       <div className="max-w-screen-lg mx-auto px-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         {/* About Section */}
-        <section id="about" className="px-10 py-20 bg-white" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <h3 className="text-3xl font-bold mb-6 text-gray-800">About Me</h3>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl">
+        <section id="about" className="px-10 py-20 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h3 className="text-3xl font-bold mb-6 text-teal-300">About Me</h3>
+          <p className="text-lg text-gray-100 leading-relaxed max-w-4xl">
             I am a seasoned <strong>Full-Stack Software Engineer</strong> with over 
             <strong> 16 years of professional experience</strong> across 
             <strong> financial services, healthcare, and enterprise systems</strong>. 
@@ -98,7 +98,7 @@ export default function App() {
             combined with modern <strong>DevOps practices</strong> using Docker, Kubernetes, and CI/CD pipelines.
           </p>
 
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mt-4">
+          <p className="text-lg text-gray-100 leading-relaxed max-w-4xl mt-4">
             I specialize in designing and building scalable, secure, and high-performance applications 
             using <strong>microservices architecture</strong>, <strong>cloud platforms (Azure)</strong>, and 
             best practices such as <strong>SOLID principles</strong> and design patterns. 
@@ -106,94 +106,94 @@ export default function App() {
             and collaboration with cross-functional teams</strong>.
           </p>
 
-          <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mt-4">
+          <p className="text-lg text-gray-100 leading-relaxed max-w-4xl mt-4">
             Currently pursuing a <strong>Master of Software Engineering (Level 9)</strong> in New Zealand, 
             I continue to enhance my technical expertise while working on innovative academic and professional projects.
           </p>
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="px-10 py-20 bg-white" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <h3 className="text-3xl font-bold mb-10 text-gray-800">Projects</h3>
+        <section id="projects" className="px-10 py-20 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h3 className="text-3xl font-bold mb-10 text-teal-300">Projects</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             {/* Satellite Office – Salary Packaging */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-gray-800">Salary Packaging & Financial Systems</h4>
-              <p className="text-gray-700 mt-2">
+            <div className="p-6 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <h4 className="text-xl font-semibold text-teal-300">Salary Packaging & Financial Systems</h4>
+              <p className="text-gray-100 mt-2">
                 Built and maintained enterprise-grade salary packaging and financial systems at Smartgroup 
                 (via Satellite Office), improving scalability and compliance for Australian clients.
               </p>
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm text-gray-100 mt-2">
                 <strong>Tech:</strong> .NET Core, SQL Server, Microservices, Docker, Kubernetes, Azure DevOps
               </p>
             </div>
 
             {/* Willis Towers Watson – BrightChoices */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-gray-800">BrightChoices</h4>
-              <p className="text-gray-700 mt-2">
+            <div className="p-6 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <h4 className="text-xl font-semibold text-teal-300">BrightChoices</h4>
+              <p className="text-gray-100 mt-2">
                 Employee benefits marketplace where users explore, compare, and enroll in health and 
                 financial benefits. Delivered enhancements that improved <strong>user experience and performance</strong>.
               </p>
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm text-gray-100 mt-2">
                 <strong>Tech:</strong> C#, ASP.NET MVC, Angular, SQL Server, Azure
               </p>
             </div>
 
             {/* Willis Towers Watson – Benefit Access */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-gray-800">Benefit Access</h4>
-              <p className="text-gray-700 mt-2">
+            <div className="p-6 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <h4 className="text-xl font-semibold text-teal-300">Benefit Access</h4>
+              <p className="text-gray-100 mt-2">
                 Secure platform for employees to access and manage workplace benefits. 
                 Integrated <strong>single sign-on, role-based access, and reporting</strong>.
               </p>
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm text-gray-100 mt-2">
                 <strong>Tech:</strong> C#, ASP.NET, Angular, SQL Server, Azure DevOps
               </p>
             </div>
 
             {/* Willis Towers Watson – FSA Portal */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-gray-800">FSA Portal</h4>
-              <p className="text-gray-700 mt-2">
+            <div className="p-6 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <h4 className="text-xl font-semibold text-teal-300">FSA Portal</h4>
+              <p className="text-gray-100 mt-2">
                 Flexible Spending Account portal enabling employees to manage contributions, reimbursements, 
                 and balances. Improved <strong>compliance and workflows</strong>.
               </p>
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm text-gray-100 mt-2">
                 <strong>Tech:</strong> C#, ASP.NET MVC, SQL Server, REST APIs, CI/CD
               </p>
             </div>
 
             {/* AXA Philippines – Customer Portals */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-gray-800">Insurance Customer Portals</h4>
-              <p className="text-gray-700 mt-2">
+            <div className="p-6 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <h4 className="text-xl font-semibold text-teal-300">Insurance Customer Portals</h4>
+              <p className="text-gray-100 mt-2">
                 Built online portals at AXA Philippines for <strong>policy management, claims processing, 
                 and digital payments</strong>, driving digital transformation for clients.
               </p>
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm text-gray-100 mt-2">
                 <strong>Tech:</strong> .NET Core, Angular, REST APIs, SQL Server
               </p>
             </div>
 
             {/* Equicom & Eclaro – HR & Healthcare Systems */}
-            <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-gray-800">HR & Healthcare Systems</h4>
-              <p className="text-gray-700 mt-2">
+            <div className="p-6 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <h4 className="text-xl font-semibold text-teal-300">HR & Healthcare Systems</h4>
+              <p className="text-gray-100 mt-2">
                 Designed and developed HRIS, billing, and healthcare management applications at Equicom 
                 and Eclaro, supporting enterprise operations and analytics.
               </p>
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm text-gray-100 mt-2">
                 <strong>Tech:</strong> C#, .NET Framework, MVC, SQL Server, SSRS, Crystal Reports
               </p>
             </div>
 
             {/* GitHub Projects */}
-            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-gray-800">Car Rental System</h4>
-              <p className="text-gray-700 mt-2">
+            <div className="p-6 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <h4 className="text-xl font-semibold text-teal-300">Car Rental System</h4>
+              <p className="text-gray-100 mt-2">
                 Full-stack project for Yoobee MSE800 using layered architecture, UML diagrams, and 
                 standalone builds for deployment.
               </p>
@@ -203,9 +203,9 @@ export default function App() {
               </a>
             </div>
 
-            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-gray-800">Store Management System</h4>
-              <p className="text-gray-700 mt-2">
+            <div className="p-6 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <h4 className="text-xl font-semibold text-teal-300">Store Management System</h4>
+              <p className="text-gray-100 mt-2">
                 CLI-based Python app with SQLAlchemy for data persistence, validation, and testing.
               </p>
               <a href="https://github.com/retiangson/MSE800_PSE/tree/main/Week3/Activity6" target="_blank" rel="noopener noreferrer"
@@ -214,9 +214,9 @@ export default function App() {
               </a>
             </div>
 
-            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-gray-800">HR System</h4>
-              <p className="text-gray-700 mt-2">
+            <div className="p-6 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <h4 className="text-xl font-semibold text-teal-300">HR System</h4>
+              <p className="text-gray-100 mt-2">
                 Object-Oriented Python HR system showcasing encapsulation, inheritance, and modular design.
               </p>
               <a href="https://github.com/retiangson/MSE800_PSE/tree/main/Week3/Activity4" target="_blank" rel="noopener noreferrer"
@@ -225,9 +225,9 @@ export default function App() {
               </a>
             </div>
 
-            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-gray-800">Quantum Computing with Qiskit</h4>
-              <p className="text-gray-700 mt-2">
+            <div className="p-6 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <h4 className="text-xl font-semibold text-teal-300">Quantum Computing with Qiskit</h4>
+              <p className="text-gray-100 mt-2">
                 Academic experiments using Qiskit: quantum circuits, oracles, Grover’s Search, 
                 and quantum teleportation.
               </p>
@@ -237,9 +237,9 @@ export default function App() {
               </a>
             </div>
 
-            <div className="p-6 bg-white border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-gray-800">Python OOP & Assignments</h4>
-              <p className="text-gray-700 mt-2">
+            <div className="p-6 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <h4 className="text-xl font-semibold text-teal-300">Python OOP & Assignments</h4>
+              <p className="text-gray-100 mt-2">
                 A collection of Python assignments for Yoobee MSE modules, covering OOP design, 
                 database integration, and unit testing.
               </p>
@@ -253,8 +253,8 @@ export default function App() {
         </section>
 
         {/* Education Section */}
-        <section id="education" className="px-10 py-20 bg-gray-50" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <h3 className="text-3xl font-bold mb-10 text-gray-800">Education</h3>
+        <section id="education" className="px-10 py-20 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h3 className="text-3xl font-bold mb-10 text-teal-300">Education</h3>
 
           <div className="relative border-l-4 border-indigo-500 pl-6 space-y-12">
 
@@ -264,17 +264,17 @@ export default function App() {
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => setOpenMaster(!openMaster)}
               >
-                <h4 className="text-xl font-semibold text-gray-800">
+                <h4 className="text-xl font-semibold text-teal-300">
                   Master of Software Engineering (Level 9)
                 </h4>
                 {openMaster ? <FaChevronUp /> : <FaChevronDown />}
               </div>
-              <span className="block text-gray-600 text-sm mb-3">
+              <span className="block text-gray-100 text-sm mb-3">
                 2024 – 2026 (Ongoing) | Yoobee College, New Zealand
               </span>
 
               {openMaster && (
-                <div className="text-gray-700 space-y-4">
+                <div className="text-gray-100 space-y-4">
                   <p>
                     The program is designed to advance technical expertise in modern
                     software engineering, research, and applied emerging technologies.
@@ -331,17 +331,17 @@ export default function App() {
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => setOpenBachelor(!openBachelor)}
               >
-                <h4 className="text-xl font-semibold text-gray-800">
+                <h4 className="text-xl font-semibold text-teal-300">
                   Bachelor of Science in Computer Science
                 </h4>
                 {openBachelor ? <FaChevronUp /> : <FaChevronDown />}
               </div>
-              <span className="block text-gray-600 text-sm mb-3">
+              <span className="block text-gray-100 text-sm mb-3">
                 2004 – 2008 | Filamer Christian University, Philippines
               </span>
 
               {openBachelor && (
-                <p className="text-gray-700">
+                <p className="text-gray-100">
                   Built a strong foundation in programming, algorithms, and systems development. 
                   Early projects in <strong>C#, VB.Net, and SQL Server</strong> prepared me for a 
                   professional career in enterprise software engineering.
@@ -352,12 +352,12 @@ export default function App() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="px-10 py-16 bg-gray-50" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <h3 className="text-3xl font-bold mb-8 text-gray-800">Skills</h3>
+        <section id="skills" className="px-10 py-16 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h3 className="text-3xl font-bold mb-8 text-teal-300">Skills</h3>
 
           {/* Programming */}
           <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-700 mb-3">Programming</h4>
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Programming</h4>
             <div className="flex flex-wrap gap-3">
               {[
                 { name: "C#", icon: <SiDotnet /> },
@@ -383,7 +383,7 @@ export default function App() {
 
           {/* Frontend & Web */}
           <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-700 mb-3">Frontend & Web</h4>
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Frontend & Web</h4>
             <div className="flex flex-wrap gap-3">
               {[
                 { name: "React", icon: <FaReact /> },
@@ -410,7 +410,7 @@ export default function App() {
 
           {/* Backend & APIs */}
           <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-700 mb-3">Backend & APIs</h4>
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Backend & APIs</h4>
             <div className="flex flex-wrap gap-3">
               {["Web API","WCF","SOAP","REST","Microservices","SOA","Layered Architecture"].map(skill => (
                 <span
@@ -425,7 +425,7 @@ export default function App() {
 
           {/* Databases & Reporting */}
           <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-700 mb-3">Databases & Reporting</h4>
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Databases & Reporting</h4>
             <div className="flex flex-wrap gap-3">
               {[
                 { name: "SQL Server", icon: <FaDatabase /> },
@@ -450,7 +450,7 @@ export default function App() {
 
           {/* Cloud & DevOps */}
           <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-700 mb-3">Cloud & DevOps</h4>
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Cloud & DevOps</h4>
             <div className="flex flex-wrap gap-3">
               {[
                 { name: "Microsoft Azure", icon: <FaCloud /> },
@@ -473,7 +473,7 @@ export default function App() {
 
           {/* Testing */}
           <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-700 mb-3">Testing</h4>
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Testing</h4>
             <div className="flex flex-wrap gap-3">
               {["xUnit","NUnit","MS Unit Test","Moq","Rhino Mocks","SpecFlow","Selenium","Cypress"].map(skill => (
                 <span
@@ -488,7 +488,7 @@ export default function App() {
 
           {/* Version Control & Practices */}
           <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-700 mb-3">Version Control, Methodologies & Practices</h4>
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Version Control, Methodologies & Practices</h4>
             <div className="flex flex-wrap gap-3">
               {[
                 { name: "GitHub", icon: <FaGithub /> },
@@ -518,7 +518,7 @@ export default function App() {
 
           {/* Others */}
           <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-700 mb-3">Others</h4>
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Others</h4>
             <div className="flex flex-wrap gap-3">
               {[
                 { name: "PDF Pro", icon: <FaTools /> },
@@ -526,7 +526,7 @@ export default function App() {
               ].map(skill => (
                 <span
                   key={skill.name}
-                  className="flex items-center gap-2 px-4 py-2 bg-gray-200 text-gray-700 rounded-lg shadow"
+                  className="flex items-center gap-2 px-4 py-2 bg-gray-200 text-gray-100 rounded-lg shadow"
                 >
                   {skill.icon} {skill.name}
                 </span>
@@ -536,8 +536,8 @@ export default function App() {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="px-10 py-20 bg-gray-50" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <h3 className="text-3xl font-bold mb-10 text-gray-800">Experience</h3>
+        <section id="experience" className="px-10 py-20 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <h3 className="text-3xl font-bold mb-10 text-teal-300">Experience</h3>
 
           <div className="space-y-6">
             {[
@@ -589,7 +589,7 @@ export default function App() {
                 ]
               }
             ].map((job, idx) => (
-              <div key={idx} className="border rounded-lg shadow bg-white"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <div key={idx} className="border rounded-lg shadow px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <button
                   onClick={() =>
                     setOpenJob(openJob === idx ? null : idx) 
@@ -597,15 +597,15 @@ export default function App() {
                   className="w-full flex justify-between items-center px-6 py-4 text-left"
                 >
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-800">{job.role}</h4>
-                    <span className="block text-sm text-gray-600">{job.period}</span>
+                    <h4 className="text-lg font-semibold text-teal-300">{job.role}</h4>
+                    <span className="block text-sm text-gray-100">{job.period}</span>
                   </div>
                   <span className="text-blue-600 text-2xl">
                     {openJob === idx ? "−" : "+"}
                   </span>
                 </button>
                 {openJob === idx && (
-                  <ul className="list-disc ml-10 mr-6 mb-6 text-gray-700 space-y-2">
+                  <ul className="list-disc ml-10 mr-6 mb-6 text-gray-100 space-y-2">
                     {job.details.map((d, i) => (
                       <li key={i}>{d}</li>
                     ))}
@@ -620,14 +620,14 @@ export default function App() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="px-10 py-24 bg-transparent text-center text-gray-100"
+        className="px-10 py-24 px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-sm rounded-xl text-center text-gray-100"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
         <h3 className="text-3xl font-bold mb-6 text-teal-300 drop-shadow-lg">
           Get In Touch
         </h3>
-        <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-lg text-gray-100 max-w-2xl mx-auto mb-10 leading-relaxed">
           Interested in collaborating, hiring, or just want to connect?  
           Feel free to reach out via email, LinkedIn, or GitHub.  
           You can also download my CV below.
