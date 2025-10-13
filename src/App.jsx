@@ -70,7 +70,7 @@ export default function App() {
             A Software Engineer passionate about building scalable apps, cloud solutions, and innovative tech.
           </p>
           <div className="mt-6 flex gap-4 justify-center md:justify-start">
-            <a href="#projects" className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
+            <a href="#projects" className="px-6 py-3 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700">
               View My Works
             </a>
             <a href="#contact" className="px-6 py-3 border border-blue-600 rounded-lg hover:bg-blue-50">
@@ -198,7 +198,7 @@ export default function App() {
                 standalone builds for deployment.
               </p>
               <a href="https://github.com/retiangson/MSE800_Car_Rental" target="_blank" rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
                 View on GitHub
               </a>
             </div>
@@ -209,7 +209,7 @@ export default function App() {
                 CLI-based Python app with SQLAlchemy for data persistence, validation, and testing.
               </p>
               <a href="https://github.com/retiangson/MSE800_PSE/tree/main/Week3/Activity6" target="_blank" rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
                 View on GitHub
               </a>
             </div>
@@ -220,7 +220,7 @@ export default function App() {
                 Object-Oriented Python HR system showcasing encapsulation, inheritance, and modular design.
               </p>
               <a href="https://github.com/retiangson/MSE800_PSE/tree/main/Week3/Activity4" target="_blank" rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
                 View on GitHub
               </a>
             </div>
@@ -232,7 +232,7 @@ export default function App() {
                 and quantum teleportation.
               </p>
               <a href="https://github.com/retiangson/MSE800_PSE/tree/main/Quantum_Computing" target="_blank" rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
                 View on GitHub
               </a>
             </div>
@@ -244,7 +244,7 @@ export default function App() {
                 database integration, and unit testing.
               </p>
               <a href="https://github.com/retiangson/MSE800_PSE/tree/main" target="_blank" rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
                 View on GitHub
               </a>
             </div>
@@ -647,7 +647,7 @@ export default function App() {
             href="https://www.linkedin.com/in/retiangson"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-blue-600/80 text-white rounded-lg shadow hover:bg-blue-600 transition"
+            className="px-6 py-3 bg-blue-900/80 text-white rounded-lg shadow hover:bg-blue-900 transition"
           >
             LinkedIn
           </a>
