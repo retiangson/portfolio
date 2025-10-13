@@ -542,50 +542,94 @@ export default function App() {
           <div className="space-y-6">
             {[
               {
-                role: "Senior Software Engineer – Satellite Office (Smartgroup Australia)",
-                period: "2023 – 2025 | Auckland, NZ / Manila, PH",
+                role: "Application Analyst Developer – Satellite Office (Smartgroup Australia)",
+                period: "2023 – 2025 | Manila, PH",
+                description: "Smartgroup provides enterprise-grade salary packaging and fleet management solutions across the corporate, healthcare, government, and education sectors.",
                 details: [
-                  "Developed and supported salary packaging and financial systems using C#, .NET Core, SQL Server, and Azure DevOps.",
-                  "Improved scalability and maintainability with microservices and CI/CD pipelines.",
-                  "Collaborated with Australian teams to deliver enterprise-grade solutions."
+                  "Optimised and maintained stored procedures, reducing data-processing time from 23 hours to 2–3 hours through indexing, query tuning, and batch refactoring.",
+                  "Developed and enhanced SSRS and PDF Pro reports, delivering critical data insights to various business units and improving operational visibility.",
+                  "Led feature development and enhancements to existing systems, introducing new business functionalities and improving overall user experience.",
+                  "Troubleshot and investigated application and data-related issues, resolving incidents efficiently to minimise downtime and ensure system stability.",
+                  "Provided technical support to internal and external clients, addressing tickets, user issues, and change requests effectively.",
+                  "Participated in the code review process, implementing and enforcing coding standards and best practices across multiple development teams.",
+                  "Created and maintained unit tests, integration tests, and automated test suites for both new and legacy applications, ensuring software reliability and regression safety.",
+                  "Collaborated closely with project managers, business analysts, and end users, translating business requirements into high-quality technical solutions.",
+                  "Researched new tools, frameworks, and technologies, integrating modern approaches to enhance project efficiency and maintain industry best practices."
                 ]
               },
               {
                 role: "Senior Software Engineer – Willis Towers Watson",
                 period: "2020 – 2023 | Manila, PH",
+                description: "Willis Towers Watson (Philippines) | Mar 2020 – Jul 2023 Developed and supported enterprise-scale HR and benefits platforms including BrightChoices, Benefit Access, and FSA Portal, enabling employees worldwide to manage customised insurance and wellness packages.",
                 details: [
-                  "Led development of ACE Solutions Delivery, BrightChoices, Benefit Access, and FSA Portal.",
-                  "Enhanced platforms using C#, ASP.NET MVC, Angular, SQL Server, and Azure.",
-                  "Implemented CI/CD with Bamboo and Azure DevOps to improve deployment speed and quality.",
-                  "Collaborated with global teams on HR and employee benefits systems."
+                  "Led feature development and enhancement work for complex enterprise applications using .NET Core, Angular, and SQL Server, ensuring quality, scalability, and maintainability.",
+                  "Participated in the extraction and conversion of monolithic components into microservices, improving system modularity, deployment speed, and performance.",
+                  "Designed and implemented new APIs, data modules, and backend services that integrated seamlessly with existing platforms.",
+                  "Applied SOLID principles, Repository, Service Layer, Factory, and DTO patterns to build clean, maintainable, and scalable systems.",
+                  "Actively participated in code reviews, providing constructive feedback, maintaining coding standards, and promoting consistency across teams.",
+                  "Mentored and coached junior developers, strengthening their understanding of clean code, debugging, version control, and Agile delivery.",
+                  "Participated in the technical hiring process, assessing candidate skills, conducting interviews, and helping select high-performing developers.",
+                  "Delivered well-tested, production-ready solutions with unit, integration, and UI automation tests using NUnit, SpecFlow, Selenium, and Cypress, achieving 98% coverage.",
+                  "Championed best practices, including dependency injection, CI/CD pipelines, modular architecture, and continuous improvement methodologies.",
+                  "Hosted “Lunch & Learn” sessions to share emerging frameworks, new tools, and architecture insights across global teams.",
+                  "Collaborated with cross-functional Agile squads to deliver secure, performant, and user-focused software aligned with enterprise standards."
                 ]
               },
               {
                 role: "Core Software Developer – AXA Philippines",
                 period: "2018 – 2020 | Manila, PH",
+                description: "AXA is one of the world’s leading insurers, providing protection and financial solutions to more than 57 million people globally. I worked on ACE-DNN – Solutions Delivery, a generic platform designed to automate backend insurance operations. The goal was to help internal teams move away from long manual processes and create faster, more accurate reporting systems to support client management and decision-making.",
                 details: [
-                  "Built insurance customer portals for policy management, claims, and payments.",
-                  "Modernized applications using .NET Core, Angular, REST APIs, and SQL Server.",
-                  "Delivered initiatives that boosted digital transformation and client experience."
+                  "Developed and integrated new .NET Core modules, improving overall system performance and user experience.",
+                  "Refactored legacy SQL code and optimised database queries, reducing average processing time by around 45%.",
+                  "One of my most significant achievements was automating the manual reporting and data- generation process. This task used to take the operations team 2–3 months, but after automation, it was completed in just one day, saving time and improving productivity across departments.",
+                  "Participated in Change Advisory Board (CAB) meetings, presenting planned changes, discussing risks and impacts, and coordinating deployment approvals with senior operations and management teams.",
+                  "Handled on-premises deployments, ensuring environments were properly configured and that each rollout was successful and issue-free.",
+                  "Conducted code reviews and maintenance activities, keeping the application stable, secure, and aligned with best practices.",
+                  "Collaborated with QA engineers and business analysts to identify and resolve issues early in the cycle, improving release quality and reducing rework.",
+                  "Maintained a complete suite of unit and integration tests with 100% coverage, which helped the team release confidently with all tests consistently passing.",
+                  "Reviewed and optimised SQL scripts and stored procedures, enhancing data accuracy and report reliability across different modules."
+                ]
+              },
+              {
+                role: "Full Stack Developer - L.R.B. Medical & Maternity Clinic",
+                period: "Jan 2018 – Aug 2018 | Manila, PH",
+                description: "Developed and maintained a clinic management system supporting patient records, billing, and scheduling. The project was built using .NET Core, Angular, SQL Server, and Entity Framework, improving operational efficiency and reporting accuracy for clinical and administrative staff.",
+                details: [
+                  "Engineered an integrated clinic management platform using C#, .NET Core, Angular, and SQL Server 2014, automating patient records, billing, and reporting workflows.",
+                  "Optimized data flow and PSA birth-record submissions, cutting manual reporting time by over 50% and improving accuracy and auditability.",
+                  "Implemented secure patient-data storage and access layers, giving doctors real-time health insights for safer, data-driven decision-making.",
+                  "Managed the entire SDLC, from requirements gathering and architecture design to testing, deployment, and staff onboarding.",
+                  "Improved system performance and usability, enhancing the clinic’s operational reliability and long- term scalability."
                 ]
               },
               {
                 role: "C#.Net Developer – Eclaro International",
                 period: "2015 – 2017 | Manila, PH",
+                description: "OneBeacon Insurance Group is a U.S.-based property and casualty insurance company providing specialized commercial insurance solutions.",
                 details: [
-                  "Designed and developed HRIS and enterprise apps with C#, ASP.NET, and MVC.",
-                  "Worked with US-based clients on requirements gathering and enhancements.",
-                  "Delivered reports and dashboards with SSRS and SQL Server."
+                  "Modernized legacy ASP.NET systems by upgrading front-end components from HTML4 to HTML5 and integrating TypeScript and Angular, resulting in a more responsive and maintainable enterprise web platform.",
+                  "Developed and integrated RESTful APIs, improving data consistency and communication between front-end and back-end systems.",
+                  "Led database migration from Mainframe/DB2 to SQL Server, optimizing stored procedures, SQL scripts, and indexes for improved performance and reliability.",
+                  "Implemented automated testing frameworks using xUnit and NUnit, and led Selenium test development, improving overall test coverage, reliability, and regression efficiency.",
+                  "Managed CI/CD pipelines using Atlassian Bamboo, automating build, test, and deployment stages for consistent and faster releases.",
+                  "Enhanced and maintained 100+ SSRS reports, adding new data insights, improving report accuracy, and creating additional dashboards for executive use.",
+                  "Established and enforced .NET coding standards, promoting maintainability, scalability, and team- wide consistency.",
+                  "Re-engineered core business modules and reporting pipelines, achieving up to 35% faster system performance and greater operational stability."
                 ]
               },
               {
                 role: "Lead Software Analyst – Equitable Computer Services (Equicom)",
                 period: "2008 – 2015 | Manila, PH",
+                description: "Equitable Computer Services is a technology solutions provider supporting major Philippine financial institutions including Equitable Bank, Robinsons Bank, and BDO.",
                 details: [
-                  "Maintained enterprise applications for banking and healthcare sectors.",
-                  "Key projects: billing, HRIS, and healthcare management systems.",
-                  "Stack: C#, .NET Framework, SQL Server, SSRS, and Crystal Reports.",
-                  "Introduced automation and reporting improvements that increased productivity."
+                  "Led a team of three junior developers, mentoring them on coding standards, debugging, and full system development processes from requirements gathering to deployment.",
+                  "Designed and developed enterprise-scale banking applications for Equitable Bank, Robinsons Bank, and BDO, managing both front-end and back-end development.",
+                  "Developed the Credit Card Management System from the ground up, including database architecture, workflow automation, and reporting modules for credit and debit card operations.",
+                  "Owned and maintained backend data processes, generating critical financial and compliance reports to support credit, debit, and reconciliation systems.",
+                  "Collaborated directly with senior executives (VP-level) to design and implement client-facing systems such as customer reward and raffle platforms for banks and insurance partners, enhancing customer engagement and loyalty programs.",
+                  "Built applications for sister companies including myHealth and Medilink, integrating healthcare management and billing systems with financial platforms to streamline patient and partner transactions.",
+                  "Delivered high-volume ASP.NET and Windows applications, ensuring data security, scalability, and compliance with banking and privacy standards."
                 ]
               }
             ].map((job, idx) => (
@@ -596,7 +640,7 @@ export default function App() {
                   }
                   className="w-full flex justify-between items-center px-6 py-4 text-left"
                 >
-                  <div>
+                  <div className="px-6 pb-4">
                     <h4 className="text-lg font-semibold text-teal-300">{job.role}</h4>
                     <span className="block text-sm text-gray-100">{job.period}</span>
                   </div>
@@ -604,12 +648,18 @@ export default function App() {
                     {openJob === idx ? "−" : "+"}
                   </span>
                 </button>
+                
                 {openJob === idx && (
-                  <ul className="list-disc ml-10 mr-6 mb-6 text-gray-100 space-y-2">
-                    {job.details.map((d, i) => (
-                      <li key={i}>{d}</li>
-                    ))}
-                  </ul>
+                  <div className="px-6 pb-4">
+                    <span className="ml-10 mr-6 mb-6 text-gray-100 space-y-2 block">
+                      {job.description}
+                    </span>
+                    <ul className="list-disc ml-10 mr-6 mb-6 text-gray-100 space-y-2">
+                      {job.details.map((d, i) => (
+                        <li key={i}>{d}</li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
               </div>
             ))}
