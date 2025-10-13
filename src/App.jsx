@@ -35,7 +35,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="font-sans bg-gray-50 min-h-screen bg-cover bg-center bg-no-repeat bg-fixed text-white" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}back.webp')` }}>
+    <div className="font-sans bg-gray-50 min-h-screen bg-cover bg-center bg-no-repeat bg-fixed text-gray-100" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}back.webp')` }}>
 
       {/* Navbar */}
       <nav className="flex justify-between items-center px-6 py-4 shadow-md bg-white sticky top-0 z-50">
@@ -618,30 +618,47 @@ export default function App() {
       </div>
 
       {/* Contact Section */}
-      <section id="contact" className="px-10 py-20 bg-white text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <h3 className="text-3xl font-bold mb-6 text-gray-800">Get In Touch</h3>
-        <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-10">
-          Interested in collaborating, hiring, or just want to connect? 
-          Feel free to reach out via email, LinkedIn, or GitHub. 
+      <section
+        id="contact"
+        className="px-10 py-24 bg-transparent text-center text-gray-100"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <h3 className="text-3xl font-bold mb-6 text-teal-300 drop-shadow-lg">
+          Get In Touch
+        </h3>
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+          Interested in collaborating, hiring, or just want to connect?  
+          Feel free to reach out via email, LinkedIn, or GitHub.  
           You can also download my CV below.
         </p>
 
         <div className="flex flex-wrap justify-center gap-6">
           {/* Email */}
-          <a href="mailto:retiangson@gmail.com" 
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+          <a
+            href="mailto:retiangson@gmail.com"
+            className="px-6 py-3 bg-teal-500 text-white rounded-lg shadow hover:bg-teal-600 transition"
+          >
             Email Me
           </a>
 
           {/* LinkedIn */}
-          <a href="https://www.linkedin.com/in/retiangson" target="_blank" rel="noopener noreferrer"
-            className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition">
+          <a
+            href="https://www.linkedin.com/in/retiangson"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-blue-600/80 text-white rounded-lg shadow hover:bg-blue-600 transition"
+          >
             LinkedIn
           </a>
 
           {/* GitHub */}
-          <a href="https://github.com/retiangson" target="_blank" rel="noopener noreferrer"
-            className="px-6 py-3 bg-gray-800 text-white rounded-lg shadow hover:bg-gray-900 transition">
+          <a
+            href="https://github.com/retiangson"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-gray-800/70 text-white rounded-lg shadow hover:bg-gray-800 transition"
+          >
             GitHub
           </a>
 
@@ -649,7 +666,7 @@ export default function App() {
           <a
             href={`${import.meta.env.BASE_URL}Resume.pdf`}
             download
-            className="px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
+            className="px-6 py-3 bg-emerald-600/80 text-white rounded-lg shadow hover:bg-emerald-700 transition"
           >
             Download CV
           </a>
@@ -657,10 +674,13 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="py-6 text-center bg-white border-t mt-10 text-gray-500" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        © 2025 Ronald Tiangson. All rights reserved.
+      <footer
+        className="py-6 text-center bg-black/40 backdrop-blur-md border-t border-white/10 text-gray-400 mt-10"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        © {new Date().getFullYear()} Ronald Tiangson. All rights reserved.
       </footer>
-
     </div>
   );
 }
