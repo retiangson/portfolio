@@ -62,8 +62,8 @@ export default function App() {
       )}
 
       {/* Hero Section */}
-      <section className="space-y-12 flex flex-col md:flex-row items-center justify-center text-center md:text-left px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl from-blue-100 to-blue-50"  
-      data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <section className="space-y-12 flex flex-col md:flex-row items-center justify-center text-center md:text-left px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl bg-cover bg-center bg-no-repeat opacity-50"  
+      data-aos="fade-up" data-aos-anchor-placement="top-bottom" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${import.meta.env.BASE_URL}banner.webp')` }}>
         <div className="max-w-xl bg-transparent">
           <h2 className="text-4xl font-bold text-teal-300">Hi, I’m Ronald 👋</h2>
           <p className="mt-4 text-lg text-gray-100">
@@ -475,7 +475,7 @@ export default function App() {
           <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <h4 className="text-xl font-semibold text-gray-100 mb-3">Testing</h4>
             <div className="flex flex-wrap gap-3">
-              {["xUnit","NUnit","MS Unit Test","Moq","Rhino Mocks","SpecFlow","Selenium","Cypress"].map(skill => (
+              {["xUnit","NUnit","MS Unit Test","Moq","Rhino Mocks","SpecFlow","Selenium","Cypress", "PyTest", "DocTest", "UnitTest"].map(skill => (
                 <span
                   key={skill}
                   className="flex items-center gap-2 px-4 py-2 bg-red-100 text-red-800 rounded-lg shadow"
@@ -687,7 +687,7 @@ export default function App() {
           {/* Email */}
           <a
             href="mailto:retiangson@gmail.com"
-            className="px-6 py-3 bg-teal-500 text-white rounded-lg shadow hover:bg-teal-600 transition"
+            className="px-6 py-3 bg-teal-500/80 text-white rounded-lg shadow hover:bg-teal-600 transition"
           >
             Email Me
           </a>
@@ -719,6 +719,15 @@ export default function App() {
             className="px-6 py-3 bg-emerald-600/80 text-white rounded-lg shadow hover:bg-emerald-700 transition"
           >
             Download CV
+          </a>
+
+          {/* Qualification */}
+          <a
+            href={`${import.meta.env.BASE_URL}Qualification.pdf`}
+            download
+            className="px-6 py-3 bg-red-800/70 text-white rounded-lg shadow hover:bg-red-900 transition"
+          >
+            Qualification
           </a>
         </div>
       </section>
