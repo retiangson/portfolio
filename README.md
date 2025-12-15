@@ -72,7 +72,7 @@ Actively seeking **Software Engineer / Senior Software Engineer** roles in New Z
 * Designed and built a **production-ready budgeting platform** using **Python FastAPI**, Clean Architecture, DTO-Mapper-Repository pattern, and SOLID principles.
 * Implemented **receipt image parsing (OCR + GPT-4o)** to automatically extract grocery items and expenses.
 * Built **budget tracking, categories, funding, and insights** modules with clear domain separation.
-* Planned deployment using **AWS Free Tier (Lambda, API Gateway, RDS)** with cost-conscious architecture.
+* Planned deployment using **AWS (Lambda, API Gateway, RDS)** with cost-conscious architecture.
 * Integrated **Android (Kotlin) client** consuming REST APIs.
 * Emphasised real-world product thinking: scalability, maintainability, and user-centric design.
 

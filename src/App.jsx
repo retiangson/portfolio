@@ -4,7 +4,7 @@ import { useState } from "react";
 import { 
   FaGithub, FaLinkedin, FaEnvelope, FaBars, FaChevronDown, FaChevronUp,
   FaCode, FaPython, FaPhp, FaJs, FaReact, FaHtml5, FaCss3Alt, 
-  FaGitAlt, FaDocker, FaDatabase, FaCloud, FaVial, FaProjectDiagram, FaTools, FaGlobe, FaServer
+  FaGitAlt, FaDocker, FaDatabase, FaCloud, FaVial, FaProjectDiagram, FaTools, FaGlobe, FaServer, FaBrain
 } from "react-icons/fa";
 
 // SimpleIcons (only the ones that exist)
