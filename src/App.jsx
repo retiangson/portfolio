@@ -91,24 +91,15 @@ export default function App() {
         <section id="about" className="px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h3 className="text-3xl font-bold mb-6 text-teal-300">About Me</h3>
           <p className="text-lg text-gray-100 leading-relaxed max-w-4xl">
-            I am a seasoned <strong>Full-Stack Software Engineer</strong> with over 
-            <strong> 16 years of professional experience</strong> across 
-            <strong> financial services, healthcare, and enterprise systems</strong>. 
-            My expertise spans <strong>C#/.NET, Python, SQL, React, and TypeScript</strong>, 
-            combined with modern <strong>DevOps practices</strong> using Docker, Kubernetes, and CI/CD pipelines.
+            Results-driven Senior Software Engineer specialising in architecting and delivering scalable enterprise and cloud-native systems across finance, insurance, healthcare, and SaaS environments. Currently completing a Master of Software Engineering (2025–2026) in New Zealand, with a strong focus on software architecture, AI systems, data analytics, and DevOps.
           </p>
 
           <p className="text-lg text-gray-100 leading-relaxed max-w-4xl mt-4">
-            I specialize in designing and building scalable, secure, and high-performance applications 
-            using <strong>microservices architecture</strong>, <strong>cloud platforms (Azure)</strong>, and 
-            best practices such as <strong>SOLID principles</strong> and design patterns. 
-            Beyond coding, I bring strong skills in <strong>system analysis, technical leadership, 
-            and collaboration with cross-functional teams</strong>.
+            Experienced in designing clean, layered architectures, building API-first platforms, and developing AI-powered applications using Python, FastAPI, and cloud services, supported by modern CI/CD and DevOps practices. Passionate about transforming real-world problems into maintainable, production-ready products, mentoring teams, and building ethical, high-impact technology.
           </p>
 
           <p className="text-lg text-gray-100 leading-relaxed max-w-4xl mt-4">
-            Currently pursuing a <strong>Master of Software Engineering (Level 9)</strong> in New Zealand, 
-            I continue to enhance my technical expertise while working on innovative academic and professional projects.
+            Actively seeking Software Engineer or Senior Software Engineer opportunities in New Zealand where strong engineering fundamentals, cloud capability, and innovation are valued.
           </p>
         </section>
 

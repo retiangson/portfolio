@@ -9,25 +9,26 @@
 ---
 
 ## Career Summary
-Software Engineer with 16+ years of experience building enterprise and business applications in the insurance, healthcare, and finance industries. Skilled in .NET, SQL Server, Angular, Python, React, and cloud platforms. Extensive exposure to full stack development practices, DevOps, and Agile.  
+Results-driven Senior Software Engineer with high experience delivering enterprise and cloud-native systems across finance, insurance, healthcare, and SaaS environments. Currently completing a **Master of Software Engineering (2025–2026)** in New Zealand, with strong focus on **software architecture, AI systems, data analytics, and DevOps**.
 
-Currently completing a **Master of Software Engineering at Yoobee College, New Zealand (2025–2026)**, specializing in advanced software engineering, architecture, and research.  
+Experienced in designing **clean, layered architectures**, building **API-first platforms**, and developing **AI-powered applications** using Python, FastAPI, cloud services, and modern DevOps practices. Passionate about transforming real-world problems into scalable products, mentoring teams, and building ethical, high-impact technology.
 
-Open to **Senior, Mid-Level, or Startup roles**, with a strong appetite for learning new technologies and adapting in rapidly changing environments where I can add value immediately.  
+Actively seeking **Software Engineer / Senior Software Engineer** roles in New Zealand where strong engineering fundamentals, cloud skills, and innovation are valued.  
 
 ---
 
 ## Skills
-
-- **Programming:** Python, C#, VB.Net, .Net Core, .Net Framework, VB6, VBA  
-- **Web Development:** React, ASP.Net, MVC, HTML5, CSS, JavaScript, Angular, TypeScript, Bootstrap, PHP  
-- **Cloud & DevOps:** Microsoft Azure, Docker, Kubernetes, Azure DevOps, Bamboo, CI/CD pipelines  
+- **AI & Data:** Python, FastAPI, LLM Integration, FAISS Vector Search, OCR, Data Analysis, Exploratory Analysis
+- **Programming:** C#, VB.Net, .Net Core, .Net Framework, VB6, VBA  
+- **Mobile & Frontend:** Android (Kotlin), Angular, REST APIs, React, ASP.Net, MVC, HTML5, CSS, JavaScript, Angular, TypeScript, Bootstrap, PHP
+- **Cloud & DevOps:** AWS Lambda, API Gateway, RDS, Oracle Cloud, Docker, GitHub Actions, Microsoft Azure, Kubernetes, Azure DevOps, Bamboo, CI/CD pipelines  
 - **Databases:** SQL Server, MySQL, Oracle, SQLite, DB2, MS Access, SSIS/SSRS, Crystal Reports  
 - **Testing:** NUnit, Xunit, Moq, Specflow, Selenium, Cypress, MS Unit Test  
-- **Practices:** OOP, SOLID, Repository & Service Layer Patterns, Microservices, SOA, Layered Architecture  
+- **Practices:** Clean Architecture, Domain-Driven Design, DTO-Mapper-Repository, SOLID, Microservices, OOP, SOA, Layered Architecture  
 - **Tools:** GitHub, TFS, SVN, Jira, Confluence, Visual Studio, Azure Data  
 
 ---
+
 
 ## Work Experience
 
@@ -62,6 +63,34 @@ Open to **Senior, Mid-Level, or Startup roles**, with a strong appetite for lear
 ---
 
 ### Earlier Roles
+
+### **Selected Academic & Personal Projects**
+
+**KaiHelper – AI-Powered Grocery Budgeting App**
+*Master of Software Engineering – Team Project*
+
+* Designed and built a **production-ready budgeting platform** using **Python FastAPI**, Clean Architecture, DTO-Mapper-Repository pattern, and SOLID principles.
+* Implemented **receipt image parsing (OCR + GPT-4o)** to automatically extract grocery items and expenses.
+* Built **budget tracking, categories, funding, and insights** modules with clear domain separation.
+* Planned deployment using **AWS Free Tier (Lambda, API Gateway, RDS)** with cost-conscious architecture.
+* Integrated **Android (Kotlin) client** consuming REST APIs.
+* Emphasised real-world product thinking: scalability, maintainability, and user-centric design.
+
+**RecallAI – Personal Knowledge & LLM Assistant**
+*Independent Project*
+
+* Architected a **self-hosted AI assistant** using **FastAPI**, **local LLMs** (DeepSeek, Qwen, TinyLlama), and **FAISS vector search**.
+* Implemented document ingestion, embeddings, semantic search, chat, and multimodal pipelines.
+* Deployed on **Oracle Cloud Free Tier VM**, optimising for low-cost, offline-first inference (no paid APIs).
+* Designed modular AI services for future expansion (chat, code generation, research, transcription).
+
+**Data Analytics, ITS & Quantum Computing (Academic)**
+
+* Performed **exploratory and confirmatory data analysis** on public transport datasets (delays, traffic, weather, passenger load).
+* Designed **Intelligent Transportation System (ITS)** recommendations using real-world constraints.
+* Conducted **quantum computing experiments** (Bell states, Grover’s algorithm) using Python-based tooling and simulators.
+* Produced research-grade reports aligned with postgraduate assessment standards.
+
 - **Full-stack Developer – L.R.B. Medical & Maternity Clinic (2018)**  
   Built and maintained a clinic system using .NET Core, Angular, and SQL Server; developed workflows and reports that improved operational efficiency.  
 

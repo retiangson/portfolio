@@ -7,20 +7,22 @@
 
 ## **Professional Summary**
 
-Results-driven **Software Engineer** with over **16 years of experience** designing, developing, and delivering scalable enterprise applications across the **insurance, healthcare, and finance sectors**. Skilled in **.NET Core, C#, SQL Server, Angular**, and **cloud-native architecture**, with a strong track record of improving performance, automating workflows, and building maintainable, high-quality systems.
+Results-driven **Senior Software Engineer** specialising in architecting and delivering scalable **enterprise and cloud-native systems** across finance, insurance, healthcare, and SaaS environments. Currently completing a **Master of Software Engineering (2025–2026)** in New Zealand, with a strong focus on **software architecture, AI systems, data analytics, and DevOps**.
 
-Currently completing a **Master of Software Engineering (2025–2026)** at **Yoobee College of Creative Innovation in Auckland**, focusing on **software architecture, artificial intelligence, and DevOps automation**. Passionate about continuous learning, emerging technologies, and building software that simplifies complex business processes and delivers real value to people and organisations.
+Experienced in designing **clean, layered architectures**, building **API-first platforms**, and developing **AI-powered applications** using **Python, FastAPI, and cloud services**, supported by modern CI/CD and DevOps practices. Passionate about transforming real-world problems into maintainable, production-ready products, mentoring teams, and building **ethical, high-impact technology**.
 
-Actively seeking opportunities within **New Zealand’s technology industry** to contribute to innovative projects, grow through collaboration, and continue learning within a diverse and forward-thinking environment.
+Actively seeking **Software Engineer or Senior Software Engineer** opportunities in New Zealand where strong engineering fundamentals, cloud capability, and innovation are valued.
 
 ## **Key Skills**
 
-**Languages & Frameworks:** C#, VB.Net, .NET Core, .NET Framework, Python, TypeScript, JavaScript, Angular, Bootstrap, Kendo UI  
-**Web & API Development:** ASP.NET MVC, Web API, REST, SOAP, WCF, Microservices  
-**Cloud & DevOps:** Microsoft Azure, Docker, Kubernetes, CI/CD (Pipelines), Azure DevOps, Bamboo  
+**AI & Data:**
+Python, FastAPI, LLM Integration, FAISS Vector Search, OCR, Data Analysis, Exploratory Analysis  
+**Languages & Frameworks:** C#, VB.Net, .NET Core, .NET Framework, TypeScript, JavaScript, Angular, Bootstrap, Kendo UI  
+**Web & API Development:** Android (Kotlin), Angular, APIs, ASP.NET MVC, REST, SOAP, WCF  
+**Cloud & DevOps:** AWS Lambda, API Gateway, RDS, Oracle Cloud, Docker, CI/CD, GitHub Actions, Microsoft Azure, Kubernetes, Azure DevOps, Bamboo  
 **Databases:** SQL Server, MySQL, Oracle, SQLite, DB2, SSIS, SSRS, Crystal Reports  
 **Testing & Automation:** Xunit, NUnit, SpecFlow, Moq, Selenium, Cypress, MS Unit Test  
-**Design Patterns & Principles:** OOP, SOLID, Repository & Unit of Work Patterns, MVC, MVVM, Layered Architecture, SOA  
+**Design Patterns & Principles:** Clean Architecture, Domain-Driven Design, DTO-Mapper-Repository, SOLID, Microservices, OOP, Repository & Unit of Work Patterns, MVC, MVVM, SOA  
 **Methodologies:** Agile (SCRUM), Kanban, Waterfall  
 **Tools:** Git, TFS, SVN, Jira, Confluence, Visual Studio, PDF Pro Reports, Photoshop
 
@@ -121,14 +123,40 @@ Developed and maintained a **clinic management system** supporting patient recor
 *Fillamer Christian University – Roxas City, Philippines*
 
 ## **Projects Handled**
-
 Selected professional and academic projects that demonstrate full-stack development, architecture, and problem-solving expertise:
+### **Selected Academic & Personal Projects**
+
+**KaiHelper – AI-Powered Grocery Budgeting App**
+*Master of Software Engineering – Team Project*
+
+* Designed and built a **production-ready budgeting platform** using **Python FastAPI**, Clean Architecture, DTO-Mapper-Repository pattern, and SOLID principles.
+* Implemented **receipt image parsing (OCR + GPT-4o)** to automatically extract grocery items and expenses.
+* Built **budget tracking, categories, funding, and insights** modules with clear domain separation.
+* Planned deployment using **AWS (Lambda, API Gateway, RDS)** with cost-conscious architecture.
+* Integrated **Android (Kotlin) client** consuming REST APIs.
+* Emphasised real-world product thinking: scalability, maintainability, and user-centric design.
+
+**RecallAI – Personal Knowledge & LLM Assistant**
+*Independent Project*
+
+* Architected a **self-hosted AI assistant** using **FastAPI**, **local LLMs** (DeepSeek, Qwen, TinyLlama), and **FAISS vector search**.
+* Implemented document ingestion, embeddings, semantic search, chat, and multimodal pipelines.
+* Deployed on **Oracle Cloud Free Tier VM**, optimising for low-cost, offline-first inference (no paid APIs).
+* Designed modular AI services for future expansion (chat, code generation, research, transcription).
+
+**Data Analytics, ITS & Quantum Computing (Academic)**
+
+* Performed **exploratory and confirmatory data analysis** on public transport datasets (delays, traffic, weather, passenger load).
+* Designed **Intelligent Transportation System (ITS)** recommendations using real-world constraints.
+* Conducted **quantum computing experiments** (Bell states, Grover’s algorithm) using Python-based tooling and simulators.
+* Produced research-grade reports aligned with postgraduate assessment standards.
+
+**industrial projects (Work Experince)**
 
 * **Salary Packaging & Financial Systems** – Built and maintained enterprise-grade financial platforms at Smartgroup (via Satellite Office), improving scalability, automation, and compliance.
 * **BrightChoices / Benefit Access / FSA Portal** – Delivered new features and performance improvements for employee benefits and spending platforms at Willis Towers Watson.
 * **ACE Solutions Delivery** – Automated insurance backend operations at AXA Philippines, reducing manual reporting from 2–3 months to 1 day.
 * **HR & Healthcare Systems** – Designed and developed HRIS, billing, and healthcare management applications supporting enterprise analytics and business operations.
-* **Academic & Personal Projects** – Includes work on layered architecture systems, Python OOP design, and quantum computing experiments.
 
 For a complete list of projects, technical case studies, and live demos, please visit my portfolio:  
 **🌐 [retiangson.github.io/portfolio](https://retiangson.github.io/portfolio)**
