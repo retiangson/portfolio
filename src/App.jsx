@@ -104,138 +104,120 @@ export default function App() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <section
+          id="projects"
+          className="px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl"
+          data-aos="fade-up"
+        >
           <h3 className="text-3xl font-bold mb-10 text-teal-300">Projects</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            {/* Satellite Office – Salary Packaging */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-teal-300">Salary Packaging & Financial Systems</h4>
+            {/* KaiHelper */}
+            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+              <h4 className="text-xl font-semibold text-teal-300">
+                KaiHelper – AI Grocery Budgeting App
+              </h4>
               <p className="text-gray-100 mt-2">
-                Built and maintained enterprise-grade salary packaging and financial systems at Smartgroup 
-                (via Satellite Office), improving scalability and compliance for Australian clients.
+                AI-powered budgeting platform developed as part of the Master of Software Engineering.
+                Automatically parses grocery receipts, categorises expenses, tracks budgets, and generates insights
+                using a clean, scalable backend architecture.
+              </p>
+              <p className="text-sm text-gray-100 mt-2">
+                <strong>Tech:</strong> Python, FastAPI, Clean Architecture, DTO/Mapper/Repository,
+                OCR (GPT-4o), SQLAlchemy, AWS Lambda, API Gateway, RDS
+              </p>
+            </div>
+
+            {/* RecallAI */}
+            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+              <h4 className="text-xl font-semibold text-teal-300">
+                RecallAI – Personal Knowledge LLM Assistant
+              </h4>
+              <p className="text-gray-100 mt-2">
+                Self-hosted AI assistant for document ingestion, semantic search, and conversational knowledge recall.
+                Designed to run fully offline using local LLMs and vector search for cost-efficient inference.
+              </p>
+              <p className="text-sm text-gray-100 mt-2">
+                <strong>Tech:</strong> Python, FastAPI, FAISS Vector Search, Local LLMs (DeepSeek, Qwen),
+                Oracle Cloud Free Tier, REST APIs
+              </p>
+            </div>
+
+            {/* Satellite Office – Salary Packaging */}
+            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+              <h4 className="text-xl font-semibold text-teal-300">
+                Salary Packaging & Financial Systems
+              </h4>
+              <p className="text-gray-100 mt-2">
+                Built and maintained enterprise-grade salary packaging and financial platforms at Smartgroup
+                (via Satellite Office), supporting large-scale Australian corporate, healthcare, and government clients.
               </p>
               <p className="text-sm text-gray-100 mt-2">
                 <strong>Tech:</strong> .NET Core, SQL Server, Microservices, Docker, Kubernetes, Azure DevOps
               </p>
             </div>
 
-            {/* Willis Towers Watson – BrightChoices */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-teal-300">BrightChoices</h4>
+            {/* Willis Towers Watson */}
+            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+              <h4 className="text-xl font-semibold text-teal-300">
+                Employee Benefits Platforms (WTW)
+              </h4>
               <p className="text-gray-100 mt-2">
-                Employee benefits marketplace where users explore, compare, and enroll in health and 
-                financial benefits. Delivered enhancements that improved <strong>user experience and performance</strong>.
+                Delivered features and performance improvements across BrightChoices, Benefit Access,
+                and FSA Portal — enabling employees worldwide to manage benefits, enrolments, and reimbursements.
               </p>
               <p className="text-sm text-gray-100 mt-2">
-                <strong>Tech:</strong> C#, ASP.NET MVC, Angular, SQL Server, Azure
+                <strong>Tech:</strong> C#, ASP.NET MVC, Angular, SQL Server, REST APIs, Azure DevOps
               </p>
             </div>
 
-            {/* Willis Towers Watson – Benefit Access */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-teal-300">Benefit Access</h4>
+            {/* AXA */}
+            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+              <h4 className="text-xl font-semibold text-teal-300">
+                Insurance Automation & Customer Portals
+              </h4>
               <p className="text-gray-100 mt-2">
-                Secure platform for employees to access and manage workplace benefits. 
-                Integrated <strong>single sign-on, role-based access, and reporting</strong>.
+                Developed backend automation and customer-facing portals at AXA Philippines,
+                significantly reducing manual insurance reporting cycles and improving operational efficiency.
               </p>
               <p className="text-sm text-gray-100 mt-2">
-                <strong>Tech:</strong> C#, ASP.NET, Angular, SQL Server, Azure DevOps
+                <strong>Tech:</strong> .NET Core, Angular, SQL Server, REST APIs
               </p>
             </div>
 
-            {/* Willis Towers Watson – FSA Portal */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-teal-300">FSA Portal</h4>
+            {/* HR & Healthcare */}
+            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+              <h4 className="text-xl font-semibold text-teal-300">
+                HR & Healthcare Management Systems
+              </h4>
               <p className="text-gray-100 mt-2">
-                Flexible Spending Account portal enabling employees to manage contributions, reimbursements, 
-                and balances. Improved <strong>compliance and workflows</strong>.
-              </p>
-              <p className="text-sm text-gray-100 mt-2">
-                <strong>Tech:</strong> C#, ASP.NET MVC, SQL Server, REST APIs, CI/CD
-              </p>
-            </div>
-
-            {/* AXA Philippines – Customer Portals */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-teal-300">Insurance Customer Portals</h4>
-              <p className="text-gray-100 mt-2">
-                Built online portals at AXA Philippines for <strong>policy management, claims processing, 
-                and digital payments</strong>, driving digital transformation for clients.
-              </p>
-              <p className="text-sm text-gray-100 mt-2">
-                <strong>Tech:</strong> .NET Core, Angular, REST APIs, SQL Server
-              </p>
-            </div>
-
-            {/* Equicom & Eclaro – HR & Healthcare Systems */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-teal-300">HR & Healthcare Systems</h4>
-              <p className="text-gray-100 mt-2">
-                Designed and developed HRIS, billing, and healthcare management applications at Equicom 
-                and Eclaro, supporting enterprise operations and analytics.
+                Designed and delivered HRIS, billing, and healthcare management systems
+                supporting enterprise reporting, compliance, and operational workflows.
               </p>
               <p className="text-sm text-gray-100 mt-2">
                 <strong>Tech:</strong> C#, .NET Framework, MVC, SQL Server, SSRS, Crystal Reports
               </p>
             </div>
 
-            {/* GitHub Projects */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-teal-300">Car Rental System</h4>
+            {/* Academic & GitHub */}
+            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl border shadow hover:shadow-lg transition">
+              <h4 className="text-xl font-semibold text-teal-300">
+                Academic & GitHub Projects
+              </h4>
               <p className="text-gray-100 mt-2">
-                Full-stack project for Yoobee MSE800 using layered architecture, UML diagrams, and 
-                standalone builds for deployment.
+                Collection of academic and independent projects including a Car Rental System,
+                Python OOP systems, data analytics exercises, and quantum computing experiments.
               </p>
-              <a href="https://github.com/retiangson/MSE800_Car_Rental" target="_blank" rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
-                View on GitHub
-              </a>
-            </div>
-
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-teal-300">Store Management System</h4>
-              <p className="text-gray-100 mt-2">
-                CLI-based Python app with SQLAlchemy for data persistence, validation, and testing.
+              <p className="text-sm text-gray-100 mt-2">
+                <strong>Tech:</strong> Python, SQLAlchemy, UML, Qiskit, Unit Testing, Clean Architecture
               </p>
-              <a href="https://github.com/retiangson/MSE800_PSE/tree/main/Week3/Activity6" target="_blank" rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
-                View on GitHub
-              </a>
-            </div>
-
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-teal-300">HR System</h4>
-              <p className="text-gray-100 mt-2">
-                Object-Oriented Python HR system showcasing encapsulation, inheritance, and modular design.
-              </p>
-              <a href="https://github.com/retiangson/MSE800_PSE/tree/main/Week3/Activity4" target="_blank" rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
-                View on GitHub
-              </a>
-            </div>
-
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-teal-300">Quantum Computing with Qiskit</h4>
-              <p className="text-gray-100 mt-2">
-                Academic experiments using Qiskit: quantum circuits, oracles, Grover’s Search, 
-                and quantum teleportation.
-              </p>
-              <a href="https://github.com/retiangson/MSE800_PSE/tree/main/Quantum_Computing" target="_blank" rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
-                View on GitHub
-              </a>
-            </div>
-
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl border rounded-xl shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-              <h4 className="text-xl font-semibold text-teal-300">Python OOP & Assignments</h4>
-              <p className="text-gray-100 mt-2">
-                A collection of Python assignments for Yoobee MSE modules, covering OOP design, 
-                database integration, and unit testing.
-              </p>
-              <a href="https://github.com/retiangson/MSE800_PSE/tree/main" target="_blank" rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition">
+              <a
+                href="https://github.com/retiangson"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition"
+              >
                 View on GitHub
               </a>
             </div>
@@ -343,183 +325,174 @@ export default function App() {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="px-10 py-16 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <section
+          id="skills"
+          className="px-10 py-16 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl"
+          data-aos="fade-up"
+        >
           <h3 className="text-3xl font-bold mb-8 text-teal-300">Skills</h3>
 
-          {/* Programming */}
-          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-100 mb-3">Programming</h4>
+          {/* Programming Languages */}
+          <div className="mb-8">
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Programming Languages</h4>
             <div className="flex flex-wrap gap-3">
               {[
                 { name: "C#", icon: <SiDotnet /> },
-                { name: "VB.Net", icon: <FaCode /> },          // generic
                 { name: ".NET Core", icon: <SiDotnet /> },
-                { name: ".NET Framework (Legacy)", icon: <FaCode /> }, // generic
-                { name: "VB6", icon: <FaCode /> },             // generic
-                { name: "VBA", icon: <FaCode /> },             // generic
                 { name: "Python", icon: <FaPython /> },
-                { name: "PHP", icon: <FaPhp /> },
                 { name: "TypeScript", icon: <SiTypescript /> },
                 { name: "JavaScript", icon: <FaJs /> },
+                { name: "VB.Net", icon: <FaCode /> },
+                { name: "PHP", icon: <FaPhp /> },
               ].map(skill => (
-                <span
-                  key={skill.name}
-                  className="flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-800 rounded-lg shadow"
-                >
+                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-800 rounded-lg shadow">
                   {skill.icon} {skill.name}
                 </span>
               ))}
             </div>
           </div>
 
-          {/* Frontend & Web */}
-          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-100 mb-3">Frontend & Web</h4>
+          {/* Frontend & UI */}
+          <div className="mb-8">
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Frontend & UI</h4>
             <div className="flex flex-wrap gap-3">
               {[
                 { name: "React", icon: <FaReact /> },
                 { name: "Angular", icon: <SiAngular /> },
-                { name: "AngularJS", icon: <FaGlobe /> },      // generic web
-                { name: "ASP.NET", icon: <SiDotnet /> },
-                { name: "MVC", icon: <FaGlobe /> },            // generic web
                 { name: "HTML5", icon: <FaHtml5 /> },
                 { name: "CSS3", icon: <FaCss3Alt /> },
-                { name: "Bootstrap", icon: <SiBootstrap /> },
-                { name: "Kendo UI", icon: <FaGlobe /> },       // generic web
-                { name: "WordPress", icon: <FaGlobe /> },      // generic web
                 { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+                { name: "Bootstrap", icon: <SiBootstrap /> },
+                { name: "Kendo UI", icon: <FaGlobe /> },
               ].map(skill => (
-                <span
-                  key={skill.name}
-                  className="flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-lg shadow"
-                >
+                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-lg shadow">
                   {skill.icon} {skill.name}
                 </span>
               ))}
             </div>
           </div>
 
-          {/* Backend & APIs */}
-          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-100 mb-3">Backend & APIs</h4>
+          {/* Backend, APIs & Architecture */}
+          <div className="mb-8">
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Backend, APIs & Architecture</h4>
             <div className="flex flex-wrap gap-3">
-              {["Web API","WCF","SOAP","REST","Microservices","SOA","Layered Architecture"].map(skill => (
-                <span
-                  key={skill}
-                  className="flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-800 rounded-lg shadow"
-                >
+              {[
+                "FastAPI",
+                "ASP.NET Web API",
+                "REST",
+                "Microservices",
+                "Clean Architecture",
+                "Layered Architecture",
+                "SOA",
+                "DTO / Mapper / Repository",
+              ].map(skill => (
+                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-800 rounded-lg shadow">
                   <FaServer /> {skill}
                 </span>
               ))}
             </div>
           </div>
 
+          {/* AI & Data Engineering */}
+          <div className="mb-8">
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">AI & Data Engineering</h4>
+            <div className="flex flex-wrap gap-3">
+              {[
+                "LLM Integration",
+                "Vector Search (FAISS)",
+                "OCR / Receipt Parsing",
+                "Data Analysis",
+                "Exploratory Analysis",
+                "Embeddings",
+              ].map(skill => (
+                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-pink-100 text-pink-800 rounded-lg shadow">
+                  <FaBrain /> {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
           {/* Databases & Reporting */}
-          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div className="mb-8">
             <h4 className="text-xl font-semibold text-gray-100 mb-3">Databases & Reporting</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                { name: "SQL Server", icon: <FaDatabase /> },
-                { name: "MySQL", icon: <SiMysql /> },
-                { name: "SQLite", icon: <FaDatabase /> },
-                { name: "MS Access", icon: <FaDatabase /> },
-                { name: "DB2", icon: <FaDatabase /> },
-                { name: "Oracle", icon: <FaDatabase /> },
-                { name: "SSIS", icon: <FaDatabase /> },
-                { name: "SSRS", icon: <FaDatabase /> },
-                { name: "Crystal Reports", icon: <FaDatabase /> },
+                "SQL Server",
+                "MySQL",
+                "SQLite",
+                "Oracle",
+                "DB2",
+                "SSIS",
+                "SSRS",
+                "Crystal Reports",
               ].map(skill => (
-                <span
-                  key={skill.name}
-                  className="flex items-center gap-2 px-4 py-2 bg-yellow-100 text-yellow-800 rounded-lg shadow"
-                >
-                  {skill.icon} {skill.name}
+                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-yellow-100 text-yellow-800 rounded-lg shadow">
+                  <FaDatabase /> {skill}
                 </span>
               ))}
             </div>
           </div>
 
           {/* Cloud & DevOps */}
-          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div className="mb-8">
             <h4 className="text-xl font-semibold text-gray-100 mb-3">Cloud & DevOps</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                { name: "Microsoft Azure", icon: <FaCloud /> },
-                { name: "Azure Data", icon: <FaCloud /> },
-                { name: "Azure DevOps", icon: <FaCloud /> },
-                { name: "Docker", icon: <FaDocker /> },
-                { name: "Kubernetes", icon: <SiKubernetes /> },
-                { name: "Bamboo", icon: <FaCloud /> },     // generic devops
-                { name: "CI/CD", icon: <FaCloud /> },
+                "AWS Lambda",
+                "API Gateway",
+                "RDS",
+                "Oracle Cloud Free Tier",
+                "Microsoft Azure",
+                "Docker",
+                "Kubernetes",
+                "CI/CD",
+                "GitHub Actions",
+                "Azure DevOps",
+                "Bamboo",
               ].map(skill => (
-                <span
-                  key={skill.name}
-                  className="flex items-center gap-2 px-4 py-2 bg-indigo-100 text-indigo-800 rounded-lg shadow"
-                >
-                  {skill.icon} {skill.name}
+                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-indigo-100 text-indigo-800 rounded-lg shadow">
+                  <FaCloud /> {skill}
                 </span>
               ))}
             </div>
           </div>
 
-          {/* Testing */}
-          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-100 mb-3">Testing</h4>
+          {/* Testing & Quality */}
+          <div className="mb-8">
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Testing & Quality</h4>
             <div className="flex flex-wrap gap-3">
-              {["xUnit","NUnit","MS Unit Test","Moq","Rhino Mocks","SpecFlow","Selenium","Cypress", "PyTest", "DocTest", "UnitTest"].map(skill => (
-                <span
-                  key={skill}
-                  className="flex items-center gap-2 px-4 py-2 bg-red-100 text-red-800 rounded-lg shadow"
-                >
+              {[
+                "xUnit",
+                "NUnit",
+                "SpecFlow",
+                "Selenium",
+                "Cypress",
+                "PyTest",
+                "Moq",
+              ].map(skill => (
+                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-red-100 text-red-800 rounded-lg shadow">
                   <FaVial /> {skill}
                 </span>
               ))}
             </div>
           </div>
 
-          {/* Version Control & Practices */}
-          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-100 mb-3">Version Control, Methodologies & Practices</h4>
+          {/* Practices & Methodologies */}
+          <div className="mb-8">
+            <h4 className="text-xl font-semibold text-gray-100 mb-3">Practices & Methodologies</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                { name: "GitHub", icon: <FaGithub /> },
-                { name: "GitBash", icon: <FaProjectDiagram /> },
-                { name: "TFS", icon: <FaProjectDiagram /> },
-                { name: "SVN", icon: <FaProjectDiagram /> },
-                { name: "Tortoise", icon: <FaProjectDiagram /> },
-                { name: "Agile (SCRUM)", icon: <FaProjectDiagram /> },
-                { name: "Kanban", icon: <FaProjectDiagram /> },
-                { name: "Waterfall", icon: <FaProjectDiagram /> },
-                { name: "OOP", icon: <FaProjectDiagram /> },
-                { name: "SOLID", icon: <FaProjectDiagram /> },
-                { name: "Repository Pattern", icon: <FaProjectDiagram /> },
-                { name: "Unit of Work", icon: <FaProjectDiagram /> },
-                { name: "MVC", icon: <FaProjectDiagram /> },
-                { name: "MVVM", icon: <FaProjectDiagram /> },
+                "Git",
+                "GitHub",
+                "Agile / Scrum",
+                "Kanban",
+                "SOLID",
+                "OOP",
+                "MVC",
+                "MVVM",
               ].map(skill => (
-                <span
-                  key={skill.name}
-                  className="flex items-center gap-2 px-4 py-2 bg-teal-100 text-teal-800 rounded-lg shadow"
-                >
-                  {skill.icon} {skill.name}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Others */}
-          <div className="mb-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-            <h4 className="text-xl font-semibold text-gray-100 mb-3">Others</h4>
-            <div className="flex flex-wrap gap-3">
-              {[
-                { name: "PDF Pro", icon: <FaTools /> },
-                { name: "Photoshop", icon: <FaTools /> },
-              ].map(skill => (
-                <span
-                  key={skill.name}
-                  className="flex items-center gap-2 px-4 py-2 bg-gray-200 text-black rounded-lg shadow"
-                >
-                  {skill.icon} {skill.name}
+                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-teal-100 text-teal-800 rounded-lg shadow">
+                  <FaProjectDiagram /> {skill}
                 </span>
               ))}
             </div>
