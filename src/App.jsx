@@ -127,6 +127,14 @@ export default function App() {
                 <strong>Tech:</strong> Python, FastAPI, Clean Architecture, DTO/Mapper/Repository,
                 OCR (GPT-4o), SQLAlchemy, AWS Lambda, API Gateway, RDS
               </p>
+              <a
+                href="https://github.com/retiangson/KaiHelper"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition"
+              >
+                View on GitHub
+              </a>
             </div>
 
             {/* RecallAI */}
@@ -142,6 +150,14 @@ export default function App() {
                 <strong>Tech:</strong> Python, FastAPI, FAISS Vector Search, Local LLMs (DeepSeek, Qwen),
                 Oracle Cloud Free Tier, REST APIs
               </p>
+              <a
+                href="https://red-ocean-0d59df810.3.azurestaticapps.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition"
+              >
+                View Project
+              </a>
             </div>
 
             {/* Satellite Office – Salary Packaging */}
