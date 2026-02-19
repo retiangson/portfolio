@@ -9,23 +9,29 @@
 ---
 
 ## Career Summary
-Results-driven Senior Software Engineer with high experience delivering enterprise and cloud-native systems across finance, insurance, healthcare, and SaaS environments. Currently completing a **Master of Software Engineering (2025–2026)** in New Zealand, with strong focus on **software architecture, AI systems, data analytics, and DevOps**.
+Senior Software Engineer with 16+ years of experience designing and delivering scalable enterprise and cloud-native systems across finance, insurance, healthcare, and SaaS industries. Currently completing a Master of Software Engineering in New Zealand, specialising in software architecture, AI systems, and cloud engineering.
 
-Experienced in designing **clean, layered architectures**, building **API-first platforms**, and developing **AI-powered applications** using Python, FastAPI, cloud services, and modern DevOps practices. Passionate about transforming real-world problems into scalable products, mentoring teams, and building ethical, high-impact technology.
-
-Actively seeking **Software Engineer / Senior Software Engineer** roles in New Zealand where strong engineering fundamentals, cloud skills, and innovation are valued.  
+Experienced in building API-first platforms using .NET and Python (FastAPI), applying Clean Architecture, SOLID principles, and DevOps best practices. Proven track record of modernising legacy systems, improving performance, and delivering production-ready solutions that reduce operational overhead and increase reliability. Passionate about building ethical, high-impact technology and mentoring high-performing teams.  
 
 ---
 
 ## Skills
-- **AI & Data:** Python, FastAPI, LLM Integration, FAISS Vector Search, OCR, Data Analysis, Exploratory Analysis
-- **Programming:** C#, VB.Net, .Net Core, .Net Framework, VB6, VBA  
-- **Mobile & Frontend:** Android (Kotlin), Angular, REST APIs, React, ASP.Net, MVC, HTML5, CSS, JavaScript, Angular, TypeScript, Bootstrap, PHP
-- **Cloud & DevOps:** AWS Lambda, API Gateway, RDS, Oracle Cloud, Docker, GitHub Actions, Microsoft Azure, Kubernetes, Azure DevOps, Bamboo, CI/CD pipelines  
-- **Databases:** SQL Server, MySQL, Oracle, SQLite, DB2, MS Access, SSIS/SSRS, Crystal Reports  
-- **Testing:** NUnit, Xunit, Moq, Specflow, Selenium, Cypress, MS Unit Test  
-- **Practices:** Clean Architecture, Domain-Driven Design, DTO-Mapper-Repository, SOLID, Microservices, OOP, SOA, Layered Architecture  
-- **Tools:** GitHub, TFS, SVN, Jira, Confluence, Visual Studio, Azure Data  
+
+- **AI & Data:** Python, FastAPI, LLM Integration, FAISS Vector Search, OCR Pipelines, Data Analysis, Exploratory Data Analysis
+
+- **Programming:** C#, .NET Core, .NET Framework, VB.Net, VB6, VBA
+
+- **Mobile & Frontend:** React, Angular, TypeScript, JavaScript, ASP.NET MVC, REST APIs, HTML5, CSS, Bootstrap, Android (Kotlin), PHP
+
+- **Cloud & DevOps:** AWS (Lambda, API Gateway, RDS), Microsoft Azure, Oracle Cloud, Docker, Kubernetes, GitHub Actions, Azure DevOps, Bamboo, CI/CD Pipelines
+
+- **Databases:** SQL Server, MySQL, Oracle, SQLite, DB2, MS Access, SSIS, SSRS, Crystal Reports
+
+- **Testing:** NUnit, xUnit, SpecFlow, Moq, Selenium, Cypress, MS Unit Test
+
+- **Architecture & Practices:** Clean Architecture, Domain-Driven Design (DDD), DTO–Mapper–Repository Pattern, SOLID Principles, Microservices, Layered Architecture, OOP, SOA
+
+- **Tools:** Git, GitHub, TFS, SVN, Jira, Confluence, Visual Studio, Azure Data Studio
 
 ---
 

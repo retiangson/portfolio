@@ -151,7 +151,7 @@ export default function App() {
                 Oracle Cloud Free Tier, REST APIs
               </p>
               <a
-                href="https://red-ocean-0d59df810.3.azurestaticapps.net/"
+                href="https://polite-water-0fa5ebd00.1.azurestaticapps.net/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition"
