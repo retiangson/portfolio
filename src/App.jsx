@@ -43,6 +43,7 @@ export default function App() {
         <div className="hidden md:flex gap-6">
           <a href="#about" className="hover:text-blue-600">About</a>
           <a href="#projects" className="hover:text-blue-600">Projects</a>
+          <a href="#experience" className="hover:text-blue-600">Experience</a>
           <a href="#skills" className="hover:text-blue-600">Skills</a>
           <a href="#contact" className="hover:text-blue-600">Contact</a>
         </div>
@@ -56,6 +57,7 @@ export default function App() {
         <div className="space-y-12 flex flex-col items-center gap-4 py-4 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow-md md:hidden">
           <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
           <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
+          <a href="#experience" onClick={() => setIsMenuOpen(false)}>Experience</a>
           <a href="#skills" onClick={() => setIsMenuOpen(false)}>Skills</a>
           <a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a>
         </div>
@@ -134,6 +136,30 @@ export default function App() {
                 className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition"
               >
                 View on GitHub
+              </a>
+            </div>
+
+            {/* MemoLink */}
+            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+              <h4 className="text-xl font-semibold text-teal-300">
+                MemoLink - AI-Powered Memory & Knowledge Platform
+              </h4>
+              <p className="text-gray-100 mt-2">
+                Full-stack portfolio system for capturing, organising, and recalling personal or team knowledge.
+                Built with an AI-assisted workflow that helps users search, summarise, and manage stored information
+                through a clean web interface and API-driven backend.
+              </p>
+              <p className="text-sm text-gray-100 mt-2">
+                <strong>Tech:</strong> React, TypeScript, Python, FastAPI, SQLAlchemy, REST APIs,
+                AI/LLM Integration, Microsoft Azure Static Web Apps
+              </p>
+              <a
+                href="https://lively-ground-067a39700.7.azurestaticapps.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition"
+              >
+                View Project
               </a>
             </div>
 
@@ -521,6 +547,18 @@ export default function App() {
 
           <div className="space-y-6">
             {[
+              {
+                role: "Senior Software Engineer - Tiaki Taonga Trust Wai 262",
+                period: "2025 - Present | New Zealand",
+                description: "Tiaki Taonga Trust Wai 262 is focused on protecting, managing, and strengthening taonga, matauranga, and cultural knowledge systems. I am developing a portfolio system that supports structured digital records, secure access, and long-term information management.",
+                details: [
+                  "Designing and developing a portfolio management system with a clean, maintainable architecture suitable for future extension and operational use.",
+                  "Building full-stack features across the web interface, backend APIs, data models, and integration points to support reliable portfolio workflows.",
+                  "Applying secure-by-design practices for authentication, authorization, data validation, and controlled access to sensitive portfolio information.",
+                  "Collaborating with stakeholders to translate real-world operational requirements into practical software features and clear delivery priorities.",
+                  "Maintaining engineering quality through readable code, reusable components, testing practices, and deployment-ready implementation."
+                ]
+              },
               {
                 role: "Application Analyst Developer – Satellite Office (Smartgroup Australia)",
                 period: "2023 – 2025 | Manila, PH",
