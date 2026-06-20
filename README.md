@@ -1,122 +1,194 @@
 # Ronald Ephraim Tiangson
 
-**Location:** Unit 2/18 Hetherington Road, Ranui, Auckland 0612, New Zealand  
-**Phone:** 020-471-8827  
-**Email:** [retiangson@gmail.com](mailto:retiangson@gmail.com)  
-**LinkedIn:** [linkedin.com/in/retiangson](https://www.linkedin.com/in/retiangson/)  
+Senior Software Engineer | Full-Stack Engineering | Cloud | AI Systems
+
+**Location:** Auckland, New Zealand
+
+**Phone:** +64 20 471 8827
+
+**Email:** [retiangson@gmail.com](mailto:retiangson@gmail.com)
+
+**LinkedIn:** [linkedin.com/in/retiangson](https://www.linkedin.com/in/retiangson)
+
 **Portfolio:** [retiangson.github.io/portfolio](https://retiangson.github.io/portfolio)
 
 ---
 
-## Career Summary
-Senior Software Engineer with 16+ years of experience designing and delivering scalable enterprise and cloud-native systems across finance, insurance, healthcare, and SaaS industries. Currently completing a Master of Software Engineering in New Zealand, specialising in software architecture, AI systems, and cloud engineering.
+## Professional Summary
 
-Experienced in building API-first platforms using .NET and Python (FastAPI), applying Clean Architecture, SOLID principles, and DevOps best practices. Proven track record of modernising legacy systems, improving performance, and delivering production-ready solutions that reduce operational overhead and increase reliability. Passionate about building ethical, high-impact technology and mentoring high-performing teams.  
+Results-driven Senior Software Engineer with 16+ years of experience designing, modernising, and delivering scalable enterprise systems across finance, insurance, healthcare, SaaS, and knowledge-management domains. Currently completing a Master of Software Engineering in New Zealand, with strong focus areas in software architecture, AI-enabled systems, data analytics, cloud engineering, and secure delivery.
 
----
+Experienced in full-stack development, API-first platforms, clean architecture, cloud deployment, database optimisation, automated testing, and technical leadership. Proven record of improving operational efficiency through automation and performance tuning, including reducing long-running batch processes from 23 hours to 2-3 hours and automating insurance reporting workflows from 2-3 months to 1 day.
 
-## Skills
-
-- **AI & Data:** Python, FastAPI, LLM Integration, FAISS Vector Search, OCR Pipelines, Data Analysis, Exploratory Data Analysis
-
-- **Programming:** C#, .NET Core, .NET Framework, VB.Net, VB6, VBA
-
-- **Mobile & Frontend:** React, Angular, TypeScript, JavaScript, ASP.NET MVC, REST APIs, HTML5, CSS, Bootstrap, Android (Kotlin), PHP
-
-- **Cloud & DevOps:** AWS (Lambda, API Gateway, RDS), Microsoft Azure, Oracle Cloud, Docker, Kubernetes, GitHub Actions, Azure DevOps, Bamboo, CI/CD Pipelines
-
-- **Databases:** SQL Server, MySQL, Oracle, SQLite, DB2, MS Access, SSIS, SSRS, Crystal Reports
-
-- **Testing:** NUnit, xUnit, SpecFlow, Moq, Selenium, Cypress, MS Unit Test
-
-- **Architecture & Practices:** Clean Architecture, Domain-Driven Design (DDD), DTO–Mapper–Repository Pattern, SOLID Principles, Microservices, Layered Architecture, OOP, SOA
-
-- **Tools:** Git, GitHub, TFS, SVN, Jira, Confluence, Visual Studio, Azure Data Studio
+Currently working with Tiaki Taonga Trust Wai 262 as a Senior Software Engineer, leading development of a professional portfolio system and supporting junior developers through planning, requirements analysis, code review, mentoring, and delivery execution.
 
 ---
 
+## Core Skills
 
-## Work Experience
+### Programming Languages
+C#, .NET Core, .NET Framework, Python, TypeScript, JavaScript, VB.Net, PHP
 
-### Application Analyst Developer  
-**Satellite Office / Smartgroup Australia | Jul 2023 – Jul 2025**  
-- Developed new apps and provided maintenance support for legacy systems in the corporate space.  
-- Optimized SQL stored procedures to improve data retrieval speed.  
-- Developed reports with SSRS and PDF Pro to provide stakeholders with data-driven insights.  
-- Conducted code reviews and enforced coding standards to ensure long-term maintainability.  
-- Implemented unit, integration, and automated tests to guarantee system stability.  
-- Collaborated with project managers and business analysts to align features with client goals.  
+### Frontend & UI
+React, Angular, HTML5, CSS3, Tailwind CSS, Bootstrap, Kendo UI, responsive UI development, reusable component design
 
----
+### Backend, APIs & Architecture
+FastAPI, ASP.NET Web API, REST APIs, API documentation, Postman, Microservices, Clean Architecture, Layered Architecture, SOA, DTO/Mapper/Repository patterns, SOLID principles, OOP, MVC, MVVM
 
-### Senior Software Engineer  
-**Willis Towers Watson | Mar 2020 – Jul 2023**  
-- Supported and enhanced employee benefits systems (BrightChoices, Benefit Access, FSA Portal).  
-- Designed, developed, and delivered features end-to-end using .NET and C#.  
-- Implemented automated testing with Selenium, SpecFlow, and Cypress, reducing defects by **25%**.  
-- Facilitated knowledge-sharing sessions to upskill teams.  
-- Assisted recruitment efforts by conducting technical interviews and evaluations.  
+### AI & Data Engineering
+LLM integration, prompt engineering, FAISS vector search, embeddings, OCR/receipt parsing, data analysis, exploratory analysis, AI-assisted workflows
 
----
+### Databases & Reporting
+SQL Server, MySQL, SQLite, Oracle, DB2, SQL query tuning, stored procedures, SSIS, SSRS, Crystal Reports
 
-### .Net Core Developer  
-**AXA Philippines | Aug 2018 – Mar 2020**  
-- Developed and implemented new components for ACE Solutions Delivery.  
-- Proactively minimized troubleshooting and errors through teamwork and problem-solving.  
-- Ensured high reliability by writing **100% unit test coverage**.  
-- Enhanced reporting accuracy and performance through SQL optimization.  
+### Cloud & DevOps
+AWS Lambda, API Gateway, RDS, Oracle Cloud Free Tier, Microsoft Azure, Azure Static Web Apps, Docker, Kubernetes, CI/CD, GitHub Actions, Azure DevOps, Bamboo, environment-based configuration
+
+### Testing & Quality
+xUnit, NUnit, SpecFlow, Selenium, Cypress, PyTest, Moq, unit testing, integration testing, regression testing, code review, secure development practices
+
+### Leadership & Delivery
+Requirements analysis, technical planning, Agile/Scrum, Kanban, mentoring, junior developer leadership, stakeholder collaboration, technical documentation, source-control workflow, production support
 
 ---
 
-### Earlier Roles
+## Professional Experience
 
-### **Selected Academic & Personal Projects**
+### Senior Software Engineer
+**Tiaki Taonga Trust Wai 262 | 07 Apr 2026 - Present | New Zealand**
 
-**KaiHelper – AI-Powered Grocery Budgeting App**
-*Master of Software Engineering – Team Project*
+Tiaki Taonga Trust Wai 262 is focused on protecting, managing, and strengthening taonga, matauranga, and cultural knowledge systems. I lead development of a professional portfolio system supporting structured digital records, secure access, stakeholder workflows, and long-term information management.
 
-* Designed and built a **production-ready budgeting platform** using **Python FastAPI**, Clean Architecture, DTO-Mapper-Repository pattern, and SOLID principles.
-* Implemented **receipt image parsing (OCR + GPT-4o)** to automatically extract grocery items and expenses.
-* Built **budget tracking, categories, funding, and insights** modules with clear domain separation.
-* Planned deployment using **AWS (Lambda, API Gateway, RDS)** with cost-conscious architecture.
-* Integrated **Android (Kotlin) client** consuming REST APIs.
-* Emphasised real-world product thinking: scalability, maintainability, and user-centric design.
+- Lead junior developers by assigning work, reviewing code, explaining design decisions, and strengthening clean-code, debugging, testing, and delivery practices.
+- Plan development work across requirements analysis, feature breakdown, sprint priorities, technical tasks, risk identification, and delivery sequencing.
+- Create and refine functional requirements, user stories, acceptance criteria, workflow definitions, and implementation notes from stakeholder discussions.
+- Design and develop a portfolio management system with clean, maintainable architecture suitable for future extension and operational use.
+- Build full-stack features across web UI, backend APIs, data models, validation rules, and integration points.
+- Apply secure-by-design practices for authentication, authorization, input validation, data privacy, error handling, and controlled access to sensitive information.
+- Establish development standards for reusable components, naming, API contracts, documentation, source-control workflow, and review-ready pull requests.
 
-**RecallAI – Personal Knowledge & LLM Assistant**
-*Independent Project*
+### Application Analyst Developer
+**Satellite Office - Smartgroup Australia | Jul 2023 - Jul 2025 | Manila, Philippines**
 
-* Architected a **self-hosted AI assistant** using **FastAPI**, **local LLMs** (DeepSeek, Qwen, TinyLlama), and **FAISS vector search**.
-* Implemented document ingestion, embeddings, semantic search, chat, and multimodal pipelines.
-* Deployed on **Oracle Cloud Free Tier VM**, optimising for low-cost, offline-first inference (no paid APIs).
-* Designed modular AI services for future expansion (chat, code generation, research, transcription).
+- Maintained and enhanced enterprise salary packaging and financial platforms for corporate, healthcare, government, and education clients.
+- Optimised high-volume SQL workloads, reducing data-processing time from 23 hours to 2-3 hours through indexing, query tuning, and batch refactoring.
+- Developed and enhanced SSRS and PDF Pro reports for operational visibility and business insight.
+- Led feature enhancements, resolved production issues, and supported internal and external users.
+- Participated in code reviews, coding standards, unit testing, integration testing, automated test suites, and release-quality improvements.
+- Collaborated with project managers, business analysts, and end users to translate business requirements into reliable technical solutions.
 
-**Data Analytics, ITS & Quantum Computing (Academic)**
+### Senior Software Engineer
+**Willis Towers Watson | Mar 2020 - Jul 2023 | Manila, Philippines**
 
-* Performed **exploratory and confirmatory data analysis** on public transport datasets (delays, traffic, weather, passenger load).
-* Designed **Intelligent Transportation System (ITS)** recommendations using real-world constraints.
-* Conducted **quantum computing experiments** (Bell states, Grover’s algorithm) using Python-based tooling and simulators.
-* Produced research-grade reports aligned with postgraduate assessment standards.
+- Delivered features and performance improvements for enterprise HR and employee benefits platforms including BrightChoices, Benefit Access, and FSA Portal.
+- Led feature development using .NET Core, Angular, SQL Server, REST APIs, and Azure DevOps.
+- Participated in monolith-to-microservices extraction, improving modularity, deployment speed, and maintainability.
+- Applied SOLID principles, service layers, repository patterns, factories, DTOs, dependency injection, and automated testing practices.
+- Mentored junior developers, participated in technical hiring, and contributed to architecture and code-quality reviews.
+- Delivered unit, integration, and UI automation tests using NUnit, SpecFlow, Selenium, and Cypress.
 
-- **Full-stack Developer – L.R.B. Medical & Maternity Clinic (2018)**  
-  Built and maintained a clinic system using .NET Core, Angular, and SQL Server; developed workflows and reports that improved operational efficiency.  
+### Core Software Developer
+**AXA Philippines | Aug 2018 - Mar 2020 | Manila, Philippines**
 
-- **C#.Net Developer – Eclaro International Inc. (2015 – 2017)**  
-  Converted DB2 to SQL Server, re-engineered apps, and enforced coding standards.  
+- Developed backend automation and customer-facing insurance platform modules using .NET Core, Angular, SQL Server, and REST APIs.
+- Automated manual reporting and data-generation workflows, reducing a 2-3 month operational process to 1 day.
+- Refactored SQL scripts and stored procedures, improving processing performance by approximately 45%.
+- Participated in Change Advisory Board reviews, coordinated deployment approvals, and handled on-premises production deployments.
+- Maintained unit and integration test coverage to support reliable releases.
 
-- **Lead Software Analyst – Equitable Computer Services, Inc. (2008 – 2015)**  
-  Managed a 3-developer team and delivered high-volume applications while mentoring junior engineers.  
+### Full Stack Developer
+**L.R.B. Medical & Maternity Clinic | Jan 2018 - Aug 2018 | Manila, Philippines**
+
+- Built and maintained a clinic management system for patient records, billing, scheduling, and reporting.
+- Developed full-stack workflows using C#, .NET Core, Angular, SQL Server, and Entity Framework.
+- Reduced manual reporting work by over 50% and improved accuracy for administrative and clinical workflows.
+- Implemented secure patient-data modules and supported staff onboarding.
+
+### C#.NET Developer
+**Eclaro International - OneBeacon Insurance Group | May 2015 - Dec 2017 | Manila, Philippines**
+
+- Modernised legacy ASP.NET applications with HTML5, TypeScript, Angular, and RESTful APIs.
+- Led database migration work from Mainframe/DB2 to SQL Server, improving performance and maintainability.
+- Built automated testing with xUnit, NUnit, and Selenium.
+- Managed CI/CD pipelines using Atlassian Bamboo.
+- Enhanced more than 100 SSRS reports and contributed to executive dashboards.
+- Improved performance by up to 35% through refactoring, SQL tuning, and reporting-pipeline improvements.
+
+### Lead Software Analyst
+**Equitable Computer Services Inc. | Mar 2008 - May 2015 | Manila, Philippines**
+
+- Led a team of junior developers delivering banking, credit-card, healthcare, and financial systems.
+- Designed and developed enterprise applications for Equitable Bank, Robinsons Bank, BDO, myHealth, and Medilink.
+- Built a Credit Card Management System from the ground up, including database architecture, workflows, reporting, and backend processing.
+- Collaborated with senior executives on client-facing reward, raffle, and financial systems.
+- Mentored junior engineers across requirements gathering, coding standards, debugging, deployment, and production support.
+
+---
+
+## Selected Projects
+
+### MemoLink - AI-Powered Memory & Knowledge Platform
+[Live Demo](https://lively-ground-067a39700.7.azurestaticapps.net/)
+
+Full-stack knowledge platform for capturing, organising, and recalling personal or team knowledge. Built with an AI-assisted workflow that helps users search, summarise, and manage stored information through a clean web interface and API-driven backend.
+
+**Tech:** React, TypeScript, Python, FastAPI, SQLAlchemy, REST APIs, AI/LLM integration, Microsoft Azure Static Web Apps
+
+**Best practices:** Layered backend design, DTO-based API contracts, repository pattern, input validation, modular React components, environment-based configuration, deployment-ready cloud hosting
+
+### Wai 262 Portfolio Management System
+
+Professional portfolio platform developed for Tiaki Taonga Trust Wai 262 to manage structured digital records, project artefacts, stakeholder information, and secure knowledge workflows.
+
+**Tech:** React, TypeScript, Python, FastAPI, REST APIs, SQLAlchemy, Azure, GitHub, CI/CD, Agile delivery
+
+**Best practices:** Requirements analysis, sprint planning, clean architecture, reusable UI components, role-aware access design, secure data handling, code reviews, mentoring, and maintainable documentation
+
+### KaiHelper - AI Grocery Budgeting App
+[GitHub](https://github.com/retiangson/KaiHelper)
+
+AI-powered budgeting platform developed as part of the Master of Software Engineering. It parses grocery receipts, categorises expenses, tracks budgets, and generates insights using a clean, scalable backend architecture.
+
+**Tech:** Python, FastAPI, Clean Architecture, DTO/Mapper/Repository, OCR with GPT-4o, SQLAlchemy, AWS Lambda, API Gateway, RDS
+
+### RecallAI - Personal Knowledge LLM Assistant
+[Live Demo](https://polite-water-0fa5ebd00.1.azurestaticapps.net/)
+
+Self-hosted AI assistant for document ingestion, semantic search, and conversational knowledge recall. Designed to run with local LLMs and vector search for cost-efficient inference.
+
+**Tech:** Python, FastAPI, FAISS vector search, local LLMs, Oracle Cloud Free Tier, REST APIs
+
+### Enterprise Platforms
+
+- **Salary Packaging & Financial Systems:** Enterprise salary packaging and financial systems for Smartgroup Australia.
+- **Employee Benefits Platforms:** BrightChoices, Benefit Access, and FSA Portal at Willis Towers Watson.
+- **Insurance Automation & Customer Portals:** Backend automation and reporting platforms at AXA Philippines.
+- **HR & Healthcare Management Systems:** HRIS, clinic management, billing, and healthcare workflow systems.
 
 ---
 
 ## Education
 
-**Master of Software Engineering – In Progress (2025–2026)**  
-Yoobee College of Creative Innovation, New Zealand  
+**Master of Software Engineering, Level 9**
 
-**Bachelor of Science in Computer Science**  
-Fillamer Christian College, Roxas City, Philippines (2003 – 2007)  
+Yoobee College of Creative Innovation, New Zealand
+
+2024 - 2026, ongoing
+
+**Bachelor of Science in Computer Science**
+
+Filamer Christian University, Philippines
+
+2004 - 2008
+
+---
+
+## Professional Interests
+
+Software architecture, cloud engineering, AI systems, knowledge management, secure full-stack platforms, financial systems, healthcare systems, technical leadership, and ethical technology development.
 
 ---
 
 ## References
-Available upon request
+
+Available upon request.
