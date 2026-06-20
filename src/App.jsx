@@ -2,15 +2,20 @@ import { useState } from "react";
 
 // FontAwesome icons
 import { 
-  FaGithub, FaLinkedin, FaEnvelope, FaBars, FaChevronDown, FaChevronUp,
+  FaBars, FaChevronDown, FaChevronUp,
   FaCode, FaPython, FaPhp, FaJs, FaReact, FaHtml5, FaCss3Alt, 
-  FaGitAlt, FaDocker, FaDatabase, FaCloud, FaVial, FaProjectDiagram, FaTools, FaGlobe, FaServer, FaBrain
+  FaDatabase, FaCloud, FaVial, FaProjectDiagram, FaGlobe, FaServer, FaBrain,
+  FaShieldAlt, FaClipboardList, FaUserTie, FaBug, FaCogs, FaNetworkWired,
+  FaLock, FaTasks, FaUsers, FaSitemap, FaFileAlt
 } from "react-icons/fa";
 
 // SimpleIcons (only the ones that exist)
 import {
   SiTypescript, SiAngular, SiBootstrap, SiTailwindcss,
-  SiKubernetes, SiMysql, SiDotnet
+  SiKubernetes, SiMysql, SiDotnet, SiFastapi, SiGithubactions,
+  SiSqlite, SiOracle, SiSelenium, SiCypress, SiPytest, SiPostman,
+  SiSwagger, SiOpenai, SiDocker, SiAmazonwebservices, SiAmazonapigateway,
+  SiAmazonrds
 } from "react-icons/si";
 
 import AOS from "aos";
@@ -35,17 +40,17 @@ export default function App() {
   }, []);
 
   return (
-    <div className="space-y-12 font-sans bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl min-h-screen bg-cover bg-center bg-no-repeat bg-fixed text-gray-100" style={{ backgroundImage: `url('${import.meta.env.BASE_URL}back.webp')` }}>
+    <div className="font-sans min-h-screen bg-slate-950 bg-cover bg-center bg-no-repeat bg-fixed text-gray-100" style={{ backgroundImage: `linear-gradient(rgba(2,6,23,0.88), rgba(2,6,23,0.94)), url('${import.meta.env.BASE_URL}back.webp')` }}>
 
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-6 py-4 shadow-md bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl sticky top-0 z-50">
-        <h1 className="text-2xl font-bold text-blue-600">MyPortfolio</h1>
-        <div className="hidden md:flex gap-6">
-          <a href="#about" className="hover:text-blue-600">About</a>
-          <a href="#projects" className="hover:text-blue-600">Projects</a>
-          <a href="#experience" className="hover:text-blue-600">Experience</a>
-          <a href="#skills" className="hover:text-blue-600">Skills</a>
-          <a href="#contact" className="hover:text-blue-600">Contact</a>
+      <nav className="flex justify-between items-center px-6 md:px-10 py-4 shadow-xl bg-slate-950/80 backdrop-blur-xl border-b border-white/10 sticky top-0 z-50">
+        <h1 className="text-2xl font-bold tracking-tight text-teal-300">Ronald Tiangson</h1>
+        <div className="hidden md:flex gap-6 text-sm font-medium text-gray-200">
+          <a href="#about" className="hover:text-teal-300 transition">About</a>
+          <a href="#projects" className="hover:text-teal-300 transition">Projects</a>
+          <a href="#experience" className="hover:text-teal-300 transition">Experience</a>
+          <a href="#skills" className="hover:text-teal-300 transition">Skills</a>
+          <a href="#contact" className="hover:text-teal-300 transition">Contact</a>
         </div>
         <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <FaBars size={24} />
@@ -54,7 +59,7 @@ export default function App() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="space-y-12 flex flex-col items-center gap-4 py-4 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow-md md:hidden">
+        <div className="flex flex-col items-center gap-4 py-4 bg-slate-900/95 backdrop-blur-xl border-b border-white/10 shadow-md md:hidden">
           <a href="#about" onClick={() => setIsMenuOpen(false)}>About</a>
           <a href="#projects" onClick={() => setIsMenuOpen(false)}>Projects</a>
           <a href="#experience" onClick={() => setIsMenuOpen(false)}>Experience</a>
@@ -64,18 +69,22 @@ export default function App() {
       )}
 
       {/* Hero Section */}
-      <section className="space-y-12 flex flex-col md:flex-row items-center justify-center text-center md:text-left px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl bg-cover bg-center bg-no-repeat opacity-50"  
-      data-aos="fade-up" data-aos-anchor-placement="top-bottom" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${import.meta.env.BASE_URL}banner.webp')` }}>
-        <div className="max-w-xl bg-transparent">
-          <h2 className="text-4xl font-bold text-teal-300">Hi, I’m Ronald 👋</h2>
-          <p className="mt-4 text-lg text-gray-100">
-            A Software Engineer passionate about building scalable apps, cloud solutions, and innovative tech.
+      <section className="mx-auto max-w-7xl px-6 md:px-10 py-20 md:py-28 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left bg-cover bg-center bg-no-repeat"
+      data-aos="fade-up" data-aos-anchor-placement="top-bottom" style={{ backgroundImage: `linear-gradient(rgba(15,23,42,0.72), rgba(15,23,42,0.86)), url('${import.meta.env.BASE_URL}banner.webp')` }}>
+        <div className="max-w-3xl bg-transparent">
+          <span className="inline-flex rounded-full border border-teal-300/30 bg-teal-300/10 px-4 py-2 text-sm font-semibold text-teal-200">
+            Senior Software Engineer | Full-Stack | Cloud | AI
+          </span>
+          <h2 className="mt-6 text-4xl md:text-6xl font-bold tracking-tight text-white">Building reliable software for real business problems.</h2>
+          <p className="mt-5 text-lg md:text-xl text-gray-200 leading-relaxed">
+            I design and deliver scalable web platforms, API-first systems, and AI-assisted products with clean architecture,
+            secure engineering practices, and strong delivery leadership.
           </p>
-          <div className="mt-6 flex gap-4 justify-center md:justify-start">
-            <a href="#projects" className="px-6 py-3 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700">
-              View My Works
+          <div className="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
+            <a href="#projects" className="px-6 py-3 bg-teal-500 text-slate-950 font-semibold rounded-lg shadow hover:bg-teal-300 transition">
+              View Projects
             </a>
-            <a href="#contact" className="px-6 py-3 border border-blue-600 rounded-lg hover:bg-blue-50">
+            <a href="#contact" className="px-6 py-3 border border-white/30 rounded-lg hover:bg-white/10 transition">
               Contact Me
             </a>
           </div>
@@ -83,14 +92,14 @@ export default function App() {
         <img
           src={`${import.meta.env.BASE_URL}profile.jpg`}
           alt="Profile"
-          className="rounded-full w-64 h-64 mt-10 md:mt-0 shadow-lg opacity-80  grayscale-[30%]"
+          className="rounded-full w-64 h-64 md:w-72 md:h-72 object-cover shadow-2xl ring-4 ring-teal-300/30 grayscale-[15%]"
         />
       </section>
       
       {/* Content Section */}
-      <div className="space-y-12 max-w-screen-lg mx-auto px-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div className="space-y-12 max-w-6xl mx-auto px-4 md:px-6 py-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         {/* About Section */}
-        <section id="about" className="px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <section id="about" className="px-6 md:px-10 py-16 bg-slate-900/75 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h3 className="text-3xl font-bold mb-6 text-teal-300">About Me</h3>
           <p className="text-lg text-gray-100 leading-relaxed max-w-4xl">
             Results-driven Senior Software Engineer specialising in architecting and delivering scalable enterprise and cloud-native systems across finance, insurance, healthcare, and SaaS environments. Currently completing a Master of Software Engineering (2025–2026) in New Zealand, with a strong focus on software architecture, AI systems, data analytics, and DevOps.
@@ -108,15 +117,22 @@ export default function App() {
         {/* Projects Section */}
         <section
           id="projects"
-          className="px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl"
+          className="px-6 md:px-10 py-16 bg-slate-900/75 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl"
           data-aos="fade-up"
         >
-          <h3 className="text-3xl font-bold mb-10 text-teal-300">Projects</h3>
+          <div className="mb-10">
+            <span className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-200">Selected Work</span>
+            <h3 className="mt-2 text-3xl md:text-4xl font-bold text-white">Projects</h3>
+            <p className="mt-4 max-w-3xl text-gray-300 leading-relaxed">
+              Practical software projects focused on maintainable architecture, secure delivery, useful automation,
+              and measurable operational value.
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             {/* KaiHelper */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-slate-950/70 border border-white/10 rounded-xl shadow-xl hover:border-teal-300/50 hover:-translate-y-1 transition">
               <h4 className="text-xl font-semibold text-teal-300">
                 KaiHelper – AI Grocery Budgeting App
               </h4>
@@ -133,21 +149,25 @@ export default function App() {
                 href="https://github.com/retiangson/KaiHelper"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition"
+                className="inline-block mt-4 px-4 py-2 bg-teal-500 text-slate-950 font-semibold rounded-lg shadow hover:bg-teal-300 transition"
               >
                 View on GitHub
               </a>
             </div>
 
             {/* MemoLink */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-slate-950/70 border border-white/10 rounded-xl shadow-xl hover:border-teal-300/50 hover:-translate-y-1 transition">
               <h4 className="text-xl font-semibold text-teal-300">
                 MemoLink - AI-Powered Memory & Knowledge Platform
               </h4>
               <p className="text-gray-100 mt-2">
-                Full-stack portfolio system for capturing, organising, and recalling personal or team knowledge.
+                Full-stack knowledge system for capturing, organising, and recalling personal or team knowledge.
                 Built with an AI-assisted workflow that helps users search, summarise, and manage stored information
                 through a clean web interface and API-driven backend.
+              </p>
+              <p className="text-sm text-gray-200 mt-2">
+                <strong>Best practices:</strong> layered backend design, DTO-based API contracts, repository pattern,
+                input validation, modular React components, environment-based configuration, and deployment-ready cloud hosting.
               </p>
               <p className="text-sm text-gray-100 mt-2">
                 <strong>Tech:</strong> React, TypeScript, Python, FastAPI, SQLAlchemy, REST APIs,
@@ -157,14 +177,33 @@ export default function App() {
                 href="https://lively-ground-067a39700.7.azurestaticapps.net/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition"
+                className="inline-block mt-4 px-4 py-2 bg-teal-500 text-slate-950 font-semibold rounded-lg shadow hover:bg-teal-300 transition"
               >
                 View Project
               </a>
             </div>
 
+            {/* Wai 262 Portfolio System */}
+            <div className="p-6 bg-slate-950/70 border border-white/10 rounded-xl shadow-xl hover:border-teal-300/50 hover:-translate-y-1 transition">
+              <h4 className="text-xl font-semibold text-teal-300">
+                Wai 262 Portfolio Management System
+              </h4>
+              <p className="text-gray-100 mt-2">
+                Professional portfolio platform developed for Tiaki Taonga Trust Wai 262 to manage structured digital
+                records, project artefacts, stakeholder information, and secure knowledge workflows.
+              </p>
+              <p className="text-sm text-gray-200 mt-2">
+                <strong>Best practices:</strong> requirements analysis, sprint planning, clean architecture, reusable UI
+                components, role-aware access design, secure data handling, code reviews, mentoring, and maintainable documentation.
+              </p>
+              <p className="text-sm text-gray-100 mt-2">
+                <strong>Tech:</strong> React, TypeScript, Python, FastAPI, REST APIs, SQLAlchemy, Azure,
+                GitHub, CI/CD, Agile Delivery
+              </p>
+            </div>
+
             {/* RecallAI */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-slate-950/70 border border-white/10 rounded-xl shadow-xl hover:border-teal-300/50 hover:-translate-y-1 transition">
               <h4 className="text-xl font-semibold text-teal-300">
                 RecallAI – Personal Knowledge LLM Assistant
               </h4>
@@ -180,14 +219,14 @@ export default function App() {
                 href="https://polite-water-0fa5ebd00.1.azurestaticapps.net/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition"
+                className="inline-block mt-4 px-4 py-2 bg-teal-500 text-slate-950 font-semibold rounded-lg shadow hover:bg-teal-300 transition"
               >
                 View Project
               </a>
             </div>
 
             {/* Satellite Office – Salary Packaging */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-slate-950/70 border border-white/10 rounded-xl shadow-xl hover:border-teal-300/50 hover:-translate-y-1 transition">
               <h4 className="text-xl font-semibold text-teal-300">
                 Salary Packaging & Financial Systems
               </h4>
@@ -201,7 +240,7 @@ export default function App() {
             </div>
 
             {/* Willis Towers Watson */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-slate-950/70 border border-white/10 rounded-xl shadow-xl hover:border-teal-300/50 hover:-translate-y-1 transition">
               <h4 className="text-xl font-semibold text-teal-300">
                 Employee Benefits Platforms (WTW)
               </h4>
@@ -215,7 +254,7 @@ export default function App() {
             </div>
 
             {/* AXA */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-slate-950/70 border border-white/10 rounded-xl shadow-xl hover:border-teal-300/50 hover:-translate-y-1 transition">
               <h4 className="text-xl font-semibold text-teal-300">
                 Insurance Automation & Customer Portals
               </h4>
@@ -229,7 +268,7 @@ export default function App() {
             </div>
 
             {/* HR & Healthcare */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl shadow hover:shadow-lg transition">
+            <div className="p-6 bg-slate-950/70 border border-white/10 rounded-xl shadow-xl hover:border-teal-300/50 hover:-translate-y-1 transition">
               <h4 className="text-xl font-semibold text-teal-300">
                 HR & Healthcare Management Systems
               </h4>
@@ -243,7 +282,7 @@ export default function App() {
             </div>
 
             {/* Academic & GitHub */}
-            <div className="p-6 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl border shadow hover:shadow-lg transition">
+            <div className="p-6 bg-slate-950/70 border border-white/10 rounded-xl shadow-xl hover:border-teal-300/50 hover:-translate-y-1 transition">
               <h4 className="text-xl font-semibold text-teal-300">
                 Academic & GitHub Projects
               </h4>
@@ -258,7 +297,7 @@ export default function App() {
                 href="https://github.com/retiangson"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-blue-900 text-white rounded-lg shadow hover:bg-blue-700 transition"
+                className="inline-block mt-4 px-4 py-2 bg-teal-500 text-slate-950 font-semibold rounded-lg shadow hover:bg-teal-300 transition"
               >
                 View on GitHub
               </a>
@@ -268,10 +307,10 @@ export default function App() {
         </section>
 
         {/* Education Section */}
-        <section id="education" className="px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <section id="education" className="px-6 md:px-10 py-16 bg-slate-900/75 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
           <h3 className="text-3xl font-bold mb-10 text-teal-300">Education</h3>
 
-          <div className="relative border-l-4 border-indigo-500 pl-6 space-y-12">
+          <div className="relative border-l-4 border-teal-400/70 pl-6 space-y-12">
 
             {/* Master's Degree */}
             <div>
@@ -369,10 +408,17 @@ export default function App() {
         {/* Skills Section */}
         <section
           id="skills"
-          className="px-10 py-16 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl"
+          className="px-6 md:px-10 py-16 bg-slate-900/75 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl"
           data-aos="fade-up"
         >
-          <h3 className="text-3xl font-bold mb-8 text-teal-300">Skills</h3>
+          <div className="mb-10">
+            <span className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-200">Technical Capability</span>
+            <h3 className="mt-2 text-3xl md:text-4xl font-bold text-white">Skills</h3>
+            <p className="mt-4 max-w-3xl text-gray-300 leading-relaxed">
+              A practical engineering toolkit covering full-stack delivery, cloud deployment, AI integration,
+              testing, architecture, and technical leadership.
+            </p>
+          </div>
 
           {/* Programming Languages */}
           <div className="mb-8">
@@ -387,7 +433,7 @@ export default function App() {
                 { name: "VB.Net", icon: <FaCode /> },
                 { name: "PHP", icon: <FaPhp /> },
               ].map(skill => (
-                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-800 rounded-lg shadow">
+                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-slate-950/70 border border-blue-300/30 text-blue-100 rounded-lg shadow">
                   {skill.icon} {skill.name}
                 </span>
               ))}
@@ -407,7 +453,7 @@ export default function App() {
                 { name: "Bootstrap", icon: <SiBootstrap /> },
                 { name: "Kendo UI", icon: <FaGlobe /> },
               ].map(skill => (
-                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-green-100 text-green-800 rounded-lg shadow">
+                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-slate-950/70 border border-green-300/30 text-green-100 rounded-lg shadow">
                   {skill.icon} {skill.name}
                 </span>
               ))}
@@ -419,17 +465,19 @@ export default function App() {
             <h4 className="text-xl font-semibold text-gray-100 mb-3">Backend, APIs & Architecture</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                "FastAPI",
-                "ASP.NET Web API",
-                "REST",
-                "Microservices",
-                "Clean Architecture",
-                "Layered Architecture",
-                "SOA",
-                "DTO / Mapper / Repository",
+                { name: "FastAPI", icon: <SiFastapi /> },
+                { name: "ASP.NET Web API", icon: <SiDotnet /> },
+                { name: "REST APIs", icon: <FaNetworkWired /> },
+                { name: "API Documentation", icon: <SiSwagger /> },
+                { name: "Postman", icon: <SiPostman /> },
+                { name: "Microservices", icon: <FaSitemap /> },
+                { name: "Clean Architecture", icon: <FaProjectDiagram /> },
+                { name: "Layered Architecture", icon: <FaServer /> },
+                { name: "SOA", icon: <FaNetworkWired /> },
+                { name: "DTO / Mapper / Repository", icon: <FaCogs /> },
               ].map(skill => (
-                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-purple-100 text-purple-800 rounded-lg shadow">
-                  <FaServer /> {skill}
+                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-slate-950/70 border border-purple-300/30 text-purple-100 rounded-lg shadow">
+                  {skill.icon} {skill.name}
                 </span>
               ))}
             </div>
@@ -440,15 +488,16 @@ export default function App() {
             <h4 className="text-xl font-semibold text-gray-100 mb-3">AI & Data Engineering</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                "LLM Integration",
-                "Vector Search (FAISS)",
-                "OCR / Receipt Parsing",
-                "Data Analysis",
-                "Exploratory Analysis",
-                "Embeddings",
+                { name: "LLM Integration", icon: <SiOpenai /> },
+                { name: "Vector Search (FAISS)", icon: <FaBrain /> },
+                { name: "OCR / Receipt Parsing", icon: <FaFileAlt /> },
+                { name: "Data Analysis", icon: <FaDatabase /> },
+                { name: "Exploratory Analysis", icon: <FaBrain /> },
+                { name: "Embeddings", icon: <FaBrain /> },
+                { name: "Prompt Engineering", icon: <FaBrain /> },
               ].map(skill => (
-                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-pink-100 text-pink-800 rounded-lg shadow">
-                  <FaBrain /> {skill}
+                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-slate-950/70 border border-pink-300/30 text-pink-100 rounded-lg shadow">
+                  {skill.icon} {skill.name}
                 </span>
               ))}
             </div>
@@ -459,17 +508,19 @@ export default function App() {
             <h4 className="text-xl font-semibold text-gray-100 mb-3">Databases & Reporting</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                "SQL Server",
-                "MySQL",
-                "SQLite",
-                "Oracle",
-                "DB2",
-                "SSIS",
-                "SSRS",
-                "Crystal Reports",
+                { name: "SQL Server", icon: <FaDatabase /> },
+                { name: "MySQL", icon: <SiMysql /> },
+                { name: "SQLite", icon: <SiSqlite /> },
+                { name: "Oracle", icon: <SiOracle /> },
+                { name: "DB2", icon: <FaDatabase /> },
+                { name: "SQL Query Tuning", icon: <FaCogs /> },
+                { name: "Stored Procedures", icon: <FaDatabase /> },
+                { name: "SSIS", icon: <FaDatabase /> },
+                { name: "SSRS", icon: <FaFileAlt /> },
+                { name: "Crystal Reports", icon: <FaFileAlt /> },
               ].map(skill => (
-                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-yellow-100 text-yellow-800 rounded-lg shadow">
-                  <FaDatabase /> {skill}
+                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-slate-950/70 border border-yellow-300/30 text-yellow-100 rounded-lg shadow">
+                  {skill.icon} {skill.name}
                 </span>
               ))}
             </div>
@@ -480,20 +531,22 @@ export default function App() {
             <h4 className="text-xl font-semibold text-gray-100 mb-3">Cloud & DevOps</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                "AWS Lambda",
-                "API Gateway",
-                "RDS",
-                "Oracle Cloud Free Tier",
-                "Microsoft Azure",
-                "Docker",
-                "Kubernetes",
-                "CI/CD",
-                "GitHub Actions",
-                "Azure DevOps",
-                "Bamboo",
+                { name: "AWS Lambda", icon: <SiAmazonwebservices /> },
+                { name: "API Gateway", icon: <SiAmazonapigateway /> },
+                { name: "RDS", icon: <SiAmazonrds /> },
+                { name: "Oracle Cloud Free Tier", icon: <SiOracle /> },
+                { name: "Microsoft Azure", icon: <FaCloud /> },
+                { name: "Azure Static Web Apps", icon: <FaCloud /> },
+                { name: "Docker", icon: <SiDocker /> },
+                { name: "Kubernetes", icon: <SiKubernetes /> },
+                { name: "CI/CD", icon: <FaCogs /> },
+                { name: "GitHub Actions", icon: <SiGithubactions /> },
+                { name: "Azure DevOps", icon: <FaCloud /> },
+                { name: "Bamboo", icon: <FaCogs /> },
+                { name: "Environment Configuration", icon: <FaLock /> },
               ].map(skill => (
-                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-indigo-100 text-indigo-800 rounded-lg shadow">
-                  <FaCloud /> {skill}
+                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-slate-950/70 border border-indigo-300/30 text-indigo-100 rounded-lg shadow">
+                  {skill.icon} {skill.name}
                 </span>
               ))}
             </div>
@@ -504,16 +557,20 @@ export default function App() {
             <h4 className="text-xl font-semibold text-gray-100 mb-3">Testing & Quality</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                "xUnit",
-                "NUnit",
-                "SpecFlow",
-                "Selenium",
-                "Cypress",
-                "PyTest",
-                "Moq",
+                { name: "xUnit", icon: <FaVial /> },
+                { name: "NUnit", icon: <FaVial /> },
+                { name: "SpecFlow", icon: <FaTasks /> },
+                { name: "Selenium", icon: <SiSelenium /> },
+                { name: "Cypress", icon: <SiCypress /> },
+                { name: "PyTest", icon: <SiPytest /> },
+                { name: "Moq", icon: <FaVial /> },
+                { name: "Unit Testing", icon: <FaVial /> },
+                { name: "Integration Testing", icon: <FaCogs /> },
+                { name: "Regression Testing", icon: <FaBug /> },
+                { name: "Code Review", icon: <FaShieldAlt /> },
               ].map(skill => (
-                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-red-100 text-red-800 rounded-lg shadow">
-                  <FaVial /> {skill}
+                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-slate-950/70 border border-red-300/30 text-red-100 rounded-lg shadow">
+                  {skill.icon} {skill.name}
                 </span>
               ))}
             </div>
@@ -524,17 +581,25 @@ export default function App() {
             <h4 className="text-xl font-semibold text-gray-100 mb-3">Practices & Methodologies</h4>
             <div className="flex flex-wrap gap-3">
               {[
-                "Git",
-                "GitHub",
-                "Agile / Scrum",
-                "Kanban",
-                "SOLID",
-                "OOP",
-                "MVC",
-                "MVVM",
+                { name: "Git", icon: <FaCode /> },
+                { name: "GitHub", icon: <SiGithubactions /> },
+                { name: "Agile / Scrum", icon: <FaTasks /> },
+                { name: "Kanban", icon: <FaClipboardList /> },
+                { name: "SOLID", icon: <FaShieldAlt /> },
+                { name: "OOP", icon: <FaCode /> },
+                { name: "MVC", icon: <FaSitemap /> },
+                { name: "MVVM", icon: <FaSitemap /> },
+                { name: "Requirements Analysis", icon: <FaClipboardList /> },
+                { name: "Technical Planning", icon: <FaTasks /> },
+                { name: "Mentoring", icon: <FaUsers /> },
+                { name: "Junior Developer Leadership", icon: <FaUserTie /> },
+                { name: "Stakeholder Collaboration", icon: <FaUsers /> },
+                { name: "Technical Documentation", icon: <FaFileAlt /> },
+                { name: "Secure Development", icon: <FaLock /> },
+                { name: "Source Control Workflow", icon: <FaProjectDiagram /> },
               ].map(skill => (
-                <span key={skill} className="flex items-center gap-2 px-4 py-2 bg-teal-100 text-teal-800 rounded-lg shadow">
-                  <FaProjectDiagram /> {skill}
+                <span key={skill.name} className="flex items-center gap-2 px-4 py-2 bg-slate-950/70 border border-teal-300/30 text-teal-100 rounded-lg shadow">
+                  {skill.icon} {skill.name}
                 </span>
               ))}
             </div>
@@ -542,21 +607,32 @@ export default function App() {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="px-10 py-20 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <h3 className="text-3xl font-bold mb-10 text-teal-300">Experience</h3>
+        <section id="experience" className="px-6 md:px-10 py-16 bg-slate-900/75 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+          <div className="mb-10">
+            <span className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-200">Professional Delivery</span>
+            <h3 className="mt-2 text-3xl md:text-4xl font-bold text-white">Experience</h3>
+            <p className="mt-4 max-w-3xl text-gray-300 leading-relaxed">
+              Senior engineering experience across product delivery, architecture, technical leadership,
+              stakeholder collaboration, and production support.
+            </p>
+          </div>
 
           <div className="space-y-6">
             {[
               {
                 role: "Senior Software Engineer - Tiaki Taonga Trust Wai 262",
-                period: "2025 - Present | New Zealand",
-                description: "Tiaki Taonga Trust Wai 262 is focused on protecting, managing, and strengthening taonga, matauranga, and cultural knowledge systems. I am developing a portfolio system that supports structured digital records, secure access, and long-term information management.",
+                period: "07 Apr 2026 - Present | New Zealand",
+                description: "Tiaki Taonga Trust Wai 262 is focused on protecting, managing, and strengthening taonga, matauranga, and cultural knowledge systems. I lead development of a professional portfolio system that supports structured digital records, secure access, stakeholder workflows, and long-term information management.",
                 details: [
-                  "Designing and developing a portfolio management system with a clean, maintainable architecture suitable for future extension and operational use.",
-                  "Building full-stack features across the web interface, backend APIs, data models, and integration points to support reliable portfolio workflows.",
-                  "Applying secure-by-design practices for authentication, authorization, data validation, and controlled access to sensitive portfolio information.",
-                  "Collaborating with stakeholders to translate real-world operational requirements into practical software features and clear delivery priorities.",
-                  "Maintaining engineering quality through readable code, reusable components, testing practices, and deployment-ready implementation."
+                  "Leading junior developers by assigning tasks, reviewing code, explaining design decisions, and helping them improve clean-code, debugging, testing, and delivery practices.",
+                  "Planning development work across requirements analysis, feature breakdown, sprint priorities, technical tasks, risk identification, and delivery sequencing.",
+                  "Creating and refining functional requirements, user stories, acceptance criteria, workflow definitions, and implementation notes from stakeholder discussions.",
+                  "Designing and developing the portfolio management system with a clean, maintainable architecture suitable for future extension and operational use.",
+                  "Building full-stack features across the web interface, backend APIs, data models, validation rules, and integration points to support reliable portfolio workflows.",
+                  "Applying secure-by-design practices for authentication, authorization, input validation, data privacy, error handling, and controlled access to sensitive portfolio information.",
+                  "Establishing development standards for reusable components, naming, API contracts, documentation, source control workflow, and review-ready pull requests.",
+                  "Collaborating with stakeholders to translate real operational needs into practical software features, clear priorities, and production-ready deliverables.",
+                  "Maintaining engineering quality through testing practices, technical documentation, refactoring, deployment readiness, and continuous improvement."
                 ]
               },
               {
@@ -651,28 +727,28 @@ export default function App() {
                 ]
               }
             ].map((job, idx) => (
-              <div key={idx} className="border rounded-lg shadow bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <div key={idx} className="border border-white/10 rounded-xl shadow-xl bg-slate-950/70 backdrop-blur-xl hover:border-teal-300/40 transition"  data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <button
                   onClick={() =>
                     setOpenJob(openJob === idx ? null : idx) 
                   }
                   className="w-full flex justify-between items-center px-6 py-4 text-left"
                 >
-                  <div className="px-6 pb-4">
+                  <div className="px-2 md:px-6 pb-4">
                     <h4 className="text-lg font-semibold text-teal-300">{job.role}</h4>
-                    <span className="block text-sm text-gray-100">{job.period}</span>
+                    <span className="block text-sm text-gray-300">{job.period}</span>
                   </div>
-                  <span className="text-blue-600 text-2xl">
+                  <span className="text-teal-300 text-2xl">
                     {openJob === idx ? "−" : "+"}
                   </span>
                 </button>
                 
                 {openJob === idx && (
                   <div className="px-6 pb-4">
-                    <span className="ml-10 mr-6 mb-6 text-gray-100 space-y-2 block">
+                    <span className="ml-4 md:ml-10 mr-6 mb-6 text-gray-200 leading-relaxed block">
                       {job.description}
                     </span>
-                    <ul className="list-disc ml-10 mr-6 mb-6 text-gray-100 space-y-2">
+                    <ul className="list-disc ml-8 md:ml-10 mr-6 mb-6 text-gray-100 space-y-2 leading-relaxed">
                       {job.details.map((d, i) => (
                         <li key={i}>{d}</li>
                       ))}
@@ -688,7 +764,7 @@ export default function App() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="px-10 py-24 bg-[rgba(128,128,128,0.3)] backdrop-blur-md rounded-xl text-center text-gray-100"
+        className="mx-auto max-w-6xl px-6 md:px-10 py-20 bg-slate-900/75 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl text-center text-gray-100"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
       >
@@ -715,7 +791,7 @@ export default function App() {
             href="https://www.linkedin.com/in/retiangson"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-blue-900/80 text-white rounded-lg shadow hover:bg-blue-900 transition"
+            className="px-6 py-3 bg-blue-700/80 text-white rounded-lg shadow hover:bg-blue-700 transition"
           >
             LinkedIn
           </a>
